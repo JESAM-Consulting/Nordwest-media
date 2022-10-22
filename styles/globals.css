@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,3 +28,58 @@ a {
     background: black;
   }
 } */
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/font/Roboto-Regular.ttf");
+  /* font-weight: 400; */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Freehand";
+  src: url("/font/Freehand-Regular.ttf");
+  /* font-weight: 400; */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tahoma-Regular";
+  src: url("/font/Tahoma-Regular.ttf");
+  /* font-weight: 400; */
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: "Tahoma-Bold";
+  src: url("/font/Tahoma-Bold.ttf");
+  /* font-weight: 400; */
+  font-style: normal;
+}
+
+
+
+
+
+.font-roboto {
+  font-family: Roboto-Regular;
+  /* font-weight: 400; */
+}
+
+.font-freehand {
+  font-family: Freehand;
+  /* font-weight: 400; */
+}
+
+.font-tahoma {
+  font-family: Tahoma-Regular;
+  /* font-weight: 400; */
+}
+
+.font-tahoma-bold {
+  font-family: Tahoma-Bold;
+  /* font-weight: 100; */
+}
+

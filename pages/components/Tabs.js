@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Number from "./Number";
+import Opcion from "./Opcion";
 
 {
   /* <div className="relative pt-1">
@@ -22,17 +22,14 @@ const Tabs = () => {
     <>
       <div className="flex flex-wrap">
         <div className="w-full">
-          <ul
-            className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
-            role="tablist">
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              {/* <Image src="/img/nwm_logo_400px.png" alt="girl" width="100%" height="100%" layout="responsive" />   */}
+         <div className="grid  grid-cols-[18%_25%_25%_25%_10%]" >
+            <div className=" flex justify-center items-center ">
+            
               <img src="/img/nwm_logo_400px.png" alt="NordWest" />
-            </li>
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a
-                className={
-                  "text-xs font-bold uppercase px-5 py-3  block leading-normal " +
+            </div>
+            <div className=" flex justify-center items-center ">
+              <a className={
+                  "text-xs font-bold  px-5 py-3  block leading-normal " +
                   (openTab === 1
                     ? "text-white bg-blueGray-600"
                     : "text-blueGray-600 bg-white")
@@ -44,15 +41,17 @@ const Tabs = () => {
                 data-toggle="tab"
                 href="#link1"
                 role="tablist">
-                    <Number number="2"></Number>
-                Kennenlernen
-              </a>
-            </li>
 
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                <Opcion number="1" opcionname="Kennenlernen" selected={false}></Opcion>
+                
+                
+              </a>
+            </div>
+
+            <div className=" flex justify-center items-center ">
               <a
                 className={
-                  "text-xs font-bold uppercase px-5 py-3  block leading-normal " +
+                  "text-xs font-bold  px-5 py-3  block leading-normal " +
                   (openTab === 2
                     ? "text-white bg-blueGray-600"
                     : "text-blueGray-600 bg-white")
@@ -64,15 +63,13 @@ const Tabs = () => {
                 data-toggle="tab"
                 href="#link2"
                 role="tablist">
-                    
-             
                 Settings
               </a>
-            </li>
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+            </div>
+            <div className=" flex justify-center items-center ">
               <a
                 className={
-                  "text-xs font-bold uppercase px-5 py-3  block leading-normal " +
+                  "text-xs font-bold  px-5 py-3  block leading-normal " +
                   (openTab === 3
                     ? "text-white bg-blueGray-600"
                     : "text-blueGray-600 bg-white")
@@ -86,8 +83,10 @@ const Tabs = () => {
                 role="tablist">
                 Options
               </a>
-            </li>
-          </ul>
+            </div>
+
+            </div>
+         
 
           <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 ">
             <div className="px-4 py-5 flex-auto">
@@ -126,6 +125,7 @@ const Tabs = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </>
