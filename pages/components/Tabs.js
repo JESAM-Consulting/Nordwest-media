@@ -42,7 +42,7 @@ const Tabs = () => {
                 href="#link1"
                 role="tablist">
 
-                <Opcion number="1" opcionname="Kennenlernen" selected={false}></Opcion>
+                <Opcion number={1} opcionname="Kennenlernen" selected={openTab}></Opcion>
                 
                 
               </a>
@@ -63,7 +63,7 @@ const Tabs = () => {
                 data-toggle="tab"
                 href="#link2"
                 role="tablist">
-                Settings
+                  <Opcion number={2} opcionname="Das bieten wir Dir!" selected={openTab}></Opcion>
               </a>
             </div>
             <div className=" flex justify-center items-center ">
@@ -81,7 +81,7 @@ const Tabs = () => {
                 data-toggle="tab"
                 href="#link3"
                 role="tablist">
-                Options
+               <Opcion number={3} opcionname="Durchstarten" selected={openTab}></Opcion>
               </a>
             </div>
 
