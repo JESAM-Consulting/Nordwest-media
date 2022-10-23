@@ -140,8 +140,8 @@ const Tabs = () => {
         </div>
 
         {/*  ----------  Footer -------------------- */}
-        <div className="bg-[#464646] w-full h-[8%] footer grid  grid-cols-[58%_12%_8%_20%]  flex justify-center items-center">
-          <div className="col-start-2  text-white font-roboto  text-[0.6rem] flex items-center cursor-pointer">
+        <div className="bg-[#464646] w-full h-[8%] footer grid  grid-cols-[58%_15%_10%_20%]  flex justify-center items-center">
+          <div className="col-start-2  text-white font-roboto  text-xs flex items-center cursor-pointer">
             <a
               onClick={(e) => {
                 e.preventDefault();
@@ -152,8 +152,8 @@ const Tabs = () => {
             </a>
           </div>
 
-          <div className="col-start-3 text-white font-roboto text-[0.6rem] flex items-center cursor-pointer">
-            <a
+          <div className="col-start-3 text-white font-roboto text-xs flex items-center cursor-pointer">
+            <a 
               onClick={(e) => {
                 e.preventDefault();
                 console.log("BBB");
