@@ -7,11 +7,11 @@ const Opcion = ({ number, opcionname, selected }) => {
 
  
   return (
-    <div className="flex justify-center items-center pt-2">
+    <div className="flex justify-center items-center py-5">
       <span>
         <div
           className={
-            "relative w-8 h-8  rounded-full flex justify-center items-center text-center p-3 " +
+            "relative w-7 h-7  rounded-full flex justify-center items-center text-center p-1 " +
             (activar
               ? "bg-[#4B4B4B]"
               : "border-solid border border-[#4B4B4B]")

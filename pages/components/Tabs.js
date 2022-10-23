@@ -2,23 +2,63 @@ import React from "react";
 import Image from "next/image";
 import Opcion from "./Opcion";
 import Linea from "./Linea";
+import Tab01 from "./Tab01";
+import Tab02 from "./Tab02";
+import Tab03 from "./Tab03";
 
 const Tabs = () => {
   const [openTab, setOpenTab] = React.useState(1);
 
   const [contenido, setContenido] = React.useState(1);
+
+  const Footer = () => {
+    return (
+      <div className="bg-[#464646] w-full h-[9vh] footer grid  grid-cols-[58%_12%_8%_20%]  ">
+        <div className="col-start-2  text-white font-tahoma-bold text-bold text-xs flex items-center cursor-pointer">
+          <a
+            onClick={(e) => {
+              e.preventDefault();
+
+              setContenido(4);
+            }}>
+            Datenschutzerklärung
+          </a>
+        </div>
+
+        <div className="col-start-3 text-white font-tahoma-bold text-xs flex items-center cursor-pointer">
+          <a
+            onClick={(e) => {
+              e.preventDefault();
+
+              setContenido(5);
+            }}>
+            Impressum
+          </a>
+        </div>
+
+        <div className="col-start-4 flex flex-row items-center">
+          <a className="w-[4%]" href="https://www.facebook.com">
+            <img src="/img/brandico_facebook.svg" alt="NordWest" />
+          </a>
+          <a className="ml-5 w-[11%]" href="https://www.instagram.com">
+            <img src="/img/bxl_instagram-alt.svg" alt="NordWest" />
+          </a>
+        </div>
+      </div>
+    );
+  };
   return (
     <>
-      <div className="flex flex-wrap">
-        <div className="w-full">
-          <div className="grid  grid-cols-[18%_25%_25%_25%_10%]">
-            <div className=" flex justify-center items-center ">
+      {/* <div className="flex flex-wrap"> */}
+        {/* <div className="w-full "> */}
+          <div className="grid menu grid-cols-[15%_21%_21%_21%] bg-[#ffffff] ">
+            <div className=" flex justify-center items-center w-[80%]">
               <img src="/img/nwm_logo_400px.png" alt="NordWest" />
             </div>
             <div className=" flex justify-center items-center ">
               <a
                 className={
-                  "text-xs font-bold  px-5 py-3  block leading-normal " +
+                  "text-xs font-bold    block leading-normal " +
                   (openTab === 1
                     ? "text-white bg-blueGray-600"
                     : "text-blueGray-600 bg-white")
@@ -41,7 +81,7 @@ const Tabs = () => {
             <div className=" flex justify-center items-center ">
               <a
                 className={
-                  "text-xs font-bold  px-5 py-3  block leading-normal " +
+                  "text-xs font-bold    block leading-normal " +
                   (openTab === 2
                     ? "text-white bg-blueGray-600"
                     : "text-blueGray-600 bg-white")
@@ -63,7 +103,7 @@ const Tabs = () => {
             <div className=" flex justify-center items-center ">
               <a
                 className={
-                  "text-xs font-bold  px-5 py-3  block leading-normal " +
+                  "text-xs font-bold    block leading-normal " +
                   (openTab === 3
                     ? "text-white bg-blueGray-600"
                     : "text-blueGray-600 bg-white")
@@ -86,99 +126,40 @@ const Tabs = () => {
 
           <Linea selected={openTab}></Linea>
 
-          <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 ">
-            <div className="px-4 py-5 flex-auto">
-              <div className="tab-content tab-space">
-                <div
-                  className={contenido === 1 ? "block" : "hidden"}
-                  id="link1">
-                  <p>
-                    Collaboratively administrate empowered markets via
-                    plug-and-play networks. Dynamically procrastinate B2C users
-                    after installed base benefits.
-                    <br />
-                    <br /> Dramatically visualize customer directed convergence
-                    without revolutionary ROI.
-                  </p>
-                </div>
-                <div
-                  className={contenido === 2 ? "block" : "hidden"}
-                  id="link2">
-                  <p>
-                    Completely synergize resource taxing relationships via
-                    premier niche markets. Professionally cultivate one-to-one
-                    customer service with robust ideas.
-                    <br />
-                    <br />
-                    Dynamically innovate resource-leveling customer service for
-                    state of the art customer service.
-                  </p>
-                </div>
-                <div
-                  className={contenido === 3 ? "block" : "hidden"}
-                  id="link3">
-                  <p>
-                    Efficiently unleash cross-media information without
-                    cross-media value. Quickly maximize timely deliverables for
-                    real-time schemas.
-                    <br />
-                    <br /> Dramatically maintain clicks-and-mortar solutions
-                    without functional solutions.
-                  </p>
-                </div>
+          {/* -------------  Contenido ----------- */}
 
-                <div className={contenido === 4 ? "block" : "hidden"}>
-                  <p>Datenschutzerklärung text</p>
-                </div>
 
-                <div className={contenido === 5 ? "block" : "hidden"}>
-                  <p>Impressum text</p>
-                </div>
-              </div>
+          <div className="tab-content tab-space w-[100%] ">
+            <div className={contenido === 1 ? "block" : "hidden"} id="link1">
+               <Tab01></Tab01> 
+              
             </div>
-          </div>
-        </div>
+            <div className={contenido === 2 ? "block" : "hidden"} id="link2">
+              <Tab02></Tab02>
+            </div>
+            <div className={contenido === 3 ? "block" : "hidden"} id="link3">
+              <Tab03></Tab03>
+            </div>
 
-        {/*  ----------  Footer -------------------- */}
-        <div className="bg-[#464646] w-full h-[8%] footer grid  grid-cols-[58%_12%_8%_20%]  flex justify-center items-center">
-          <div className="col-start-2  text-white font-roboto text-bold text-xs flex items-center cursor-pointer">
-            <a
-              onClick={(e) => {
-                e.preventDefault();
-                
-                setContenido(4);
-              }}>
-              Datenschutzerklärung
-            </a>
-          </div>
+            <div className={contenido === 4 ? "block" : "hidden"}>
+              <p>Datenschutzerklärung text</p>
+            </div>
 
-          <div className="col-start-3 text-white font-roboto text-xs flex items-center cursor-pointer">
-            <a 
-              onClick={(e) => {
-                e.preventDefault();
-                
-                setContenido(5);
-              }}>
-              Impressum
-            </a>
+            <div className={contenido === 5 ? "block" : "hidden"}>
+              <p>Impressum text</p>
+            </div>
+          
+           
           </div>
 
-          <div className="col-start-4 flex flex-row items-center">
-           <a className="w-[4%]"  href="https://www.facebook.com">
-           <img  src="/img/brandico_facebook.svg" alt="NordWest" /> 
-            </a> 
-            <a className="ml-5 w-[11%]" href="https://www.instagram.com">
-            <img  src="/img/bxl_instagram-alt.svg" alt="NordWest" />
-            </a>
-          </div>
+          <Footer></Footer>
+       
 
-          {/* <div className="col-start-5">
-            
-          </div> */}
-
-
-        </div>
-      </div>
+       
+        {/* </div> */}
+        
+      {/* </div> */}
+      
     </>
   );
 };

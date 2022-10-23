@@ -7,26 +7,26 @@ const Linea = ({ selected }) => {
 
   switch (selected) {
     case 1:
-      ancho = "w-[32%]";
+      ancho = "w-[27%]";
       break;
 
     case 2:
-      ancho = "w-[57%]";
+      ancho = "w-[48%]";
       break;
     case 3:
-      ancho = "w-[82%]";
+      ancho = "w-[69%]";
       break;
 
     default:
-        ancho = "w-[32%]";
+        ancho = "w-[27%]";
         
       break;
   }
 
   return (
-    <div className="relative pt-1">
-      {/* <div className="overflow-hidden h-2 mb-4 text-xs flex rounded  shadow-inner"> */}
-      <div className="overflow-hidden h-2 mb-4 text-xs flex rounded shadow-inner">
+    <div className="relative ">
+      
+      <div className=" h-2  text-xs flex  shadow-inner">
         
 
         <div
