@@ -108,3 +108,34 @@ a {
   z-index: 100;
 
 }
+
+ul li {
+  display: inline-block;
+}
+
+ul li:before {
+  content: "• ";
+  color: #4B4B4B;
+}
+/* 
+li {
+  // Default bullets style erased 
+  list-style: none;
+}
+
+li::before {
+
+  // Unicode for a bullet 
+  content: "\2022";
+    
+  // Styles for Indentation
+  color: violet;
+    
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+li {
+  color: green;
+} */

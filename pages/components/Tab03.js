@@ -14,33 +14,60 @@ const Tab01 = () => {
             der nwm werden!
           </span>
         </div>
-        <div className="font-tahoma text-[0.85rem] text-[0.65rem] text-[#AFA9A9] w-[40%] pt-2">
-          Wir bieten einen krisensicheren Job, in dem sich unsere
-          Mitarbeiter*innen individuell entwickeln können. Mit flachen
-          Hierarchien und Kommunikation auf Augenhöhe.
+        <div className=" pt-2">
+
+          <button className="btn bg-[#E20613] rounded text-[1rem] text-[#ffffff] px-5 py-2 font-roboto">Jetzt bewerben</button>
+
         </div>
       </div>
 
       {/* ---------------------- Area Central izquierda----------------------     */}
 
-      <div className="ml-24 bg-[#EFEFEF] w-[60%] h-[37vh]  col-start-1 row-start-2 self-center pt-5  pl-10">
-        <div className="tahoma-font-bold text-[#4B4B4B] text-[2.2rem] font-extrabold   leading-[2.7rem] ">
-          In nur 3 Schritten <br /> zu Deinem neuen Job
+      <div className="pl-10 w-[90%]   col-start-1 row-start-2 self-center   ">
+
+        <div >
+          <span className="underline underline-offset-4 tahoma-font-bold text-[#4B4B4B] text-[2.2rem] font-extrabold   leading-[2.7rem]">Das bie</span>
+          <span className="tahoma-font-bold text-[#4B4B4B] text-[2.2rem] font-extrabold   leading-[2.7rem] ">ten wir Dir!</span>
+
+
         </div>
 
-        <div className="mt-10">
-          <button className="btn bg-[#E20613] rounded text-[1rem] text-[#ffffff] px-5 py-2 font-roboto">Jetzt Bewerbung starten</button>
+
+
+
+        <div className="mt-5 text-[0.9rem] text-[#4B4B4B]">
+          <ul>
+            <li> Flexible Arbeitszeiten in unserer Kernarbeitszeit (Montag bis Freitag von 8:00 Uhr bis 20:00 Uhr)</li>
+            <li> Monatliches Festgehalt</li>
+            <li> Zahlung der Vermögenswirksamen Leistungen, sowie Förderung der betrieblichen Altersvorsorge</li>
+            <li> Sicherer Arbeitsplatz als Teil der systemrelevanten Infrastruktur, sowie 20jährige Expertise als Tochterunternehmen und Service-Center der Sparkasse Bremen</li>
+            <li> Persönliche und individuelle Einarbeitung (Fachschulungen und Kommunikation) durch unsere Fachspezialisten</li>
+            <li> Erfahrungen im Banking sammeln oder erweitern (keine Vorkenntnisse erforderlich)</li>
+            <li> {'Umfangreiche Sozialleistungen wie Beihilfen zur Gesundheitsvorsorge und Teilnahme am Angebot „Job-Ticket" der BSAG'}</li>
+            <li> Moderne und klimatisierte Arbeitsplätze in zentraler Lage Technologiepark Bremen - Homeoffice ist aber auch möglich</li>
+            <li> Kostenlose Getränkebar (Kaffeespezialitäten, Tee, Wasser)</li>
+            <li> Kollegiales Arbeitsklima mit flachen Hierarchien, Kommunikation auf Augenhöhe und Duz-Kultur </li>
+          </ul>
         </div>
 
 
-        <div className="flex flex-row mt-10">
-
-            <Opcion2 className="" number={1} opcionname="Kennenlernen" activar={true}></Opcion2>
-             <Opcion2 number={2} opcionname="Über Dich" activar={false}></Opcion2>
-            <Opcion2 number={3} opcionname="Durchstarten" activar={false}></Opcion2> 
-            
-
+        <div className="pt-2">
+          <span className="underline underline-offset-4 tahoma-font-bold text-[#4B4B4B] text-[2.2rem] font-extrabold   leading-[2.7rem]">Deine A</span>
+          <span className="tahoma-font-bold text-[#4B4B4B] text-[2.2rem] font-extrabold   leading-[2.7rem] ">ufgaben</span>
         </div>
+
+
+
+
+        <div className="mt-5 text-[0.9rem] text-[#4B4B4B]">
+          <ul>
+            <li> Du bist der/die Ansprechpartner*in Nr. 1 für Kundinnen und Kunden der Sparkasse Bremen</li>
+            <li>Mit Deiner Serviceorientierung und Deinem Fachwissen löst Du fallabschließend Fragen und Anliegen unserer Kunden*innen, die uns per Telefon, Mail oder Chat erreichen</li>
+            <li>Bei Bedarf leitest Du an Fachspezialisten über oder vereinbarst Rückrufe und Termine mit dem/der jeweiligen Berater*in</li>
+          </ul>
+        </div>
+
+
       </div>
 
       {/* ---------------------- Area Inferior izquierda ----------------------     */}
@@ -53,17 +80,11 @@ const Tab01 = () => {
           className=" justify-self-end  self-center w-[2.3vw]"
         />
         <div className=" col-start-2 text-[#8C8C8C] self-center font-tahoma text-[1rem] ">
-          Über uns
+        Warum fragen wir das?
         </div>
 
         <div className="text-[#AFA9A9] col-start-2 self-start font-tahoma w-[43vw] text-[0.7rem] pt-1 ">
-          Als Tochtergesellschaft der Sparkasse Bremen AG ist die nwm
-          nordwest-media für den Kundenservice zuständig. Unsere motivierten
-          Mitarbeiter*innen helfen, beraten und lösen Probleme. Indem sie per
-          Telefon - oder auf anderen Kommunikationskanälen - mit den Kund*innen
-          der Sparkasse Bremen sprechen. Und zwar so individuell wie möglich.
-          Denn unser Ziel ist es, Menschen stets freundlich und kompetent zu
-          unterstützen.
+        Wir bieten einen krisensicheren Job, in dem sich unsere Mit­arbei­ter*innen individuell entwickeln können. Mit flachen Hierarchien und Kommunikation auf Augenhöhe.
         </div>
       </div>
       {/* Imagen de la derecha */}

@@ -5,6 +5,8 @@ import Linea from "./Linea";
 import Tab01 from "./Tab01";
 import Tab02 from "./Tab02";
 import Tab03 from "./Tab03";
+import Tab04 from "./Tab04";
+import Tab05 from "./Tab05";
 
 const Tabs = () => {
   const [openTab, setOpenTab] = React.useState(1);
@@ -142,11 +144,11 @@ const Tabs = () => {
             </div>
 
             <div className={contenido === 4 ? "block" : "hidden"}>
-              <p>Datenschutzerklärung text</p>
+            <Tab04></Tab04>
             </div>
 
             <div className={contenido === 5 ? "block" : "hidden"}>
-              <p>Impressum text</p>
+            <Tab05></Tab05>
             </div>
           
            
