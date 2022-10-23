@@ -128,11 +128,11 @@ const Tabs = () => {
                 </div>
 
                 <div className={contenido === 4 ? "block" : "hidden"}>
-                  <p>SSSS</p>
+                  <p>Datenschutzerklärung text</p>
                 </div>
 
                 <div className={contenido === 5 ? "block" : "hidden"}>
-                  <p>DDDD</p>
+                  <p>Impressum text</p>
                 </div>
               </div>
             </div>
@@ -145,7 +145,7 @@ const Tabs = () => {
             <a
               onClick={(e) => {
                 e.preventDefault();
-                console.log("AAAA");
+                
                 setContenido(4);
               }}>
               Datenschutzerklärung
@@ -156,7 +156,7 @@ const Tabs = () => {
             <a 
               onClick={(e) => {
                 e.preventDefault();
-                console.log("BBB");
+                
                 setContenido(5);
               }}>
               Impressum
