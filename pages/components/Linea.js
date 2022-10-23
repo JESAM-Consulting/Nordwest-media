@@ -7,18 +7,18 @@ const Linea = ({ selected }) => {
 
   switch (selected) {
     case 1:
-      ancho = "w-[27%]";
+      ancho = "md:w-[27%] w-[50%]";
       break;
 
     case 2:
-      ancho = "w-[48%]";
+      ancho = "md:w-[48%] w-[68%]";
       break;
     case 3:
-      ancho = "w-[69%]";
+      ancho = "md:w-[69%] w-[85%]";
       break;
 
     default:
-        ancho = "w-[27%]";
+        ancho = "md:w-[27%] w-";
         
       break;
   }

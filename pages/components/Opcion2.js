@@ -5,7 +5,7 @@ const Opcion2 = ({ number, opcionname, activar }) => {
 
  
   return (
-    <div className="flex justify-center items-center py-5 px-2">
+    <div className="flex  items-center py-5 px-2 ">
       <span>
         <div
           className={

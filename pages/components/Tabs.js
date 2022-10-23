@@ -53,14 +53,13 @@ const Tabs = () => {
     <>
       {/* <div className="flex flex-wrap"> */}
         {/* <div className="w-full "> */}
-          <div className="grid menu grid-cols-[15%_21%_21%_21%] bg-[#ffffff] ">
-            <div className=" flex justify-center items-center w-[80%]">
+          <div className="grid menu grid-cols-[40%_18%_18%_18%] xl:grid-cols-[15%_21%_21%_21%] bg-[#ffffff] ">
+            <div className=" flex justify-center items-center w-full md:w-[80%]">
               <img src="/img/nwm_logo_400px.png" alt="NordWest" />
             </div>
             <div className=" flex justify-center items-center ">
               <a
-                className={
-                  "text-xs font-bold    block leading-normal " +
+                className={    "text-xs font-bold    block leading-normal " +
                   (openTab === 1
                     ? "text-white bg-blueGray-600"
                     : "text-blueGray-600 bg-white")
