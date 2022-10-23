@@ -16,13 +16,14 @@ const Opcion = ({ number, opcionname, selected }) => {
               ? "bg-[#4B4B4B]"
               : "border-solid border border-[#4B4B4B]")
           }>
-          <span className="font-roboto">{number}</span>
+          <span className={"font-roboto "+
+          (activar ? "text-[#FFFFFF]" : "text-[#4B4B4B]")}
+          >{number}</span>
         </div>
       </span>
       <span
         className={
-          "ml-3 text-[#4B4B4B] text-[0.9rem] font-tahoma-bold" +
-          (activar ? "text-[#FFFFFF]" : "text-[#4B4B4B]")
+          "ml-3 text-[#4B4B4B] text-[0.8rem] font-tahoma-bold"         
         }>
         {opcionname}
       </span>
