@@ -7,7 +7,7 @@ const Opcion = ({ number, opcionname, selected }) => {
 
  
   return (
-    <div className="flex justify-center items-center pt-3">
+    <div className="flex justify-center items-center pt-2">
       <span>
         <div
           className={

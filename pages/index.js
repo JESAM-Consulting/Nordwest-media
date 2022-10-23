@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Tabs from './components/Tabs';
-// import styles from '../styles/Home.module.css'
+
 
 export default function Home() {
   return (
@@ -16,11 +16,7 @@ export default function Home() {
       <main >
         <Tabs></Tabs>
         
-        <h1 className="font-freehand">
-          Hello world!
-        </h1>
-        {/* <Image src="/img/girl.png" alt="girl" width="10vw" height="10vh" layout="responsive" /> */}
-        {/* <Image src="/img/girl.png" alt="girl" width="100%" height="100%" layout="responsive" /> */}
+      
       </main>
 
 

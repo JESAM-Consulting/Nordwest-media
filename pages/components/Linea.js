@@ -31,7 +31,7 @@ const Linea = ({ selected }) => {
 
         <div
           className={
-            "h-[50%] text-center whitespace-nowrap text-white justify-center bg-[#4B4B4B] " +
+            "h-[50%] text-center whitespace-nowrap text-white justify-center bg-[#E20613] " +
             ancho
           }></div>
       </div>
