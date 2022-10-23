@@ -25,8 +25,9 @@ const Linea = ({ selected }) => {
 
   return (
     <div className="relative pt-1">
-      <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-blueGray-200">
-        {/* <div style="width:30%" className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blueGray-500"></div> */}
+      {/* <div className="overflow-hidden h-2 mb-4 text-xs flex rounded  shadow-inner"> */}
+      <div className="overflow-hidden h-2 mb-4 text-xs flex rounded shadow-inner">
+        
 
         <div
           className={

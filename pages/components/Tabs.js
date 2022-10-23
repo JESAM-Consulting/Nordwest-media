@@ -78,8 +78,11 @@ const Tabs = () => {
 
             </div>
 
+            
+            <Linea  selected={openTab}></Linea>
+            
 
-            <Linea selected={openTab}></Linea>
+            
 
            
          
