@@ -1,20 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import Opcion from "./Opcion";
+import Linea from "./Linea";
 
-{
-  /* <div className="relative pt-1">
-  <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-blueGray-200">
-    <div style="width:30%" className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blueGray-500"></div>
-  </div>
-</div> */
-}
 
-// <div class="relative w-12 h-12 bg-purple-200 rounded-full flex justify-center items-center text-center p-5 shadow-xl">
-// <span class="absolute text-3xl left-0 top-0 text-purple-800">"
-// </span>
-// Yes.
-// </div>
+
 
 const Tabs = () => {
   const [openTab, setOpenTab] = React.useState(1);
@@ -22,6 +12,7 @@ const Tabs = () => {
     <>
       <div className="flex flex-wrap">
         <div className="w-full">
+        
          <div className="grid  grid-cols-[18%_25%_25%_25%_10%]" >
             <div className=" flex justify-center items-center ">
             
@@ -86,6 +77,11 @@ const Tabs = () => {
             </div>
 
             </div>
+
+
+            <Linea selected={openTab}></Linea>
+
+           
          
 
           <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 ">

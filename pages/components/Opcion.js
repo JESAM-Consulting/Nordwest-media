@@ -5,16 +5,16 @@ const Opcion = ({ number, opcionname, selected }) => {
 
   const activar = selected===number;
 
-  console.log("seleccionado "+selected);
+ 
   return (
-    <div className="flex justify-center items-center pt-2">
+    <div className="flex justify-center items-center pt-3">
       <span>
         <div
           className={
             "relative w-8 h-8  rounded-full flex justify-center items-center text-center p-3 " +
             (activar
               ? "bg-[#4B4B4B]"
-              : "border-solid border-2 border-[#4B4B4B]")
+              : "border-solid border border-[#4B4B4B]")
           }>
           <span className="font-roboto">{number}</span>
         </div>
@@ -30,6 +30,6 @@ const Opcion = ({ number, opcionname, selected }) => {
   );
 };
 
-// border-solid border-2 border-indigo-600
+
 
 export default Opcion;
