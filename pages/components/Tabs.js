@@ -140,7 +140,7 @@ const Tabs = () => {
         </div>
 
         {/*  ----------  Footer -------------------- */}
-        <div className="bg-[#464646] w-full h-[8%] footer grid  grid-cols-[58%_12%_8%_5%_5%]  flex justify-center items-center">
+        <div className="bg-[#464646] w-full h-[8%] footer grid  grid-cols-[58%_12%_8%_20%]  flex justify-center items-center">
           <div className="col-start-2  text-white font-roboto  text-[0.6rem] flex items-center cursor-pointer">
             <a
               onClick={(e) => {
@@ -163,13 +163,18 @@ const Tabs = () => {
             </a>
           </div>
 
-          <div className="col-start-4 ">
-             <img className="w-[15%]" src="/img/brandico_facebook.svg" alt="NordWest" />
+          <div className="col-start-4 flex flex-row items-center">
+           <a className="w-[4%]"  href="https://www.facebook.com">
+           <img  src="/img/brandico_facebook.svg" alt="NordWest" /> 
+            </a> 
+            <a className="ml-3 w-[11%]" href="https://www.instagram.com">
+            <img  src="/img/bxl_instagram-alt.svg" alt="NordWest" />
+            </a>
           </div>
 
-          <div className="col-start-5">
-            <img className="w-[35%]" src="/img/bxl_instagram-alt.svg" alt="NordWest" />
-          </div>
+          {/* <div className="col-start-5">
+            
+          </div> */}
 
 
         </div>
