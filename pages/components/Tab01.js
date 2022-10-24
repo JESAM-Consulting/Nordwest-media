@@ -34,7 +34,7 @@ const AreaCentralIzquierda = () => {
       </div>
 {/* TODO: centrar correctamente */}
       
-      <div className="lg:flex lg:flex-row mt-10   ml-24 lg:w-[100%] w-[60%]  flex flex-col	 lg:justify-start  ">
+      <div className="lg:flex lg:flex-row mt-10    lg:w-[100%] w-[40%]  flex flex-col ml-[28vw] lg:justify-start  ">
         <Opcion2 number={1} opcionname="Kennenlernen" activar={true}></Opcion2>
         <Opcion2 number={2} opcionname="Über Dich" activar={false}></Opcion2>
         <Opcion2 number={3} opcionname="Durchstarten" activar={false}></Opcion2>
@@ -45,6 +45,62 @@ const AreaCentralIzquierda = () => {
     </>
   );
 };
+
+
+const AreaInferiorIzquierda = () => {
+  return (
+    <div className="bg-[#EFEFEF]  grid  grid-cols-[9%_80%]  lg:w-[75vw] w-[100vw]
+    grid-rows-[3vh_14vh] h-100 pt-5 pl-3  leading-[0.95rem]">
+
+          <img
+            src="/img/entypo_help-with-circle.svg"
+            alt="NordWest"
+            className=" justify-self-end  self-center lg:w-[2.3vw] w-[15vw]"
+          />
+          <div className=" col-start-2 text-[#8C8C8C] self-center font-tahoma text-[1rem] ">
+            Über uns
+          </div>
+
+          <div className="text-[#AFA9A9] col-start-2 self-start font-tahoma lg:w-[43vw] w-[80vw] text-[0.7rem] pt-1 ">
+            Als Tochtergesellschaft der Sparkasse Bremen AG ist die nwm
+            nordwest-media für den Kundenservice zuständig. Unsere motivierten
+            Mitarbeiter*innen helfen, beraten und lösen Probleme. Indem sie per
+            Telefon - oder auf anderen Kommunikationskanälen - mit den
+            Kund*innen der Sparkasse Bremen sprechen. Und zwar so individuell
+            wie möglich. Denn unser Ziel ist es, Menschen stets freundlich und
+            kompetent zu unterstützen.
+          </div>
+
+
+    </div>
+
+  )
+}
+
+const ImagenDerecha1=()=>{
+  return (
+    <>
+    <img
+            src="/img/girl-large.png"
+            alt="NordWest"
+            className="  h-[89vh] "
+          />
+    </>
+  )
+}
+
+
+const ImagenDerecha2=()=>{
+  return (
+    <>
+    <img
+            src="/img/girl-low.png"
+            alt="NordWest"
+            className="  w-[100vw] "
+          />
+    </>
+  )
+}
 
 const Tab01 = () => {
   return (
@@ -64,48 +120,40 @@ const Tab01 = () => {
         </div>
 
         {/* ---------------------- Area Inferior izquierda ----------------------     */}
-        <div
-          className=" col-start-1 row-start-3 bg-[#EFEFEF]  grid  grid-cols-[9%_80%] contenido w-[75vw] 
-      grid-rows-[3vh_10vh] pt-5   leading-[0.95rem]">
-          <img
-            src="/img/entypo_help-with-circle.svg"
-            alt="NordWest"
-            className=" justify-self-end  self-center w-[2.3vw]"
-          />
-          <div className=" col-start-2 text-[#8C8C8C] self-center font-tahoma text-[1rem] ">
-            Über uns
-          </div>
+        <div  className=" col-start-1 row-start-3 contenido ">
 
-          <div className="text-[#AFA9A9] col-start-2 self-start font-tahoma w-[43vw] text-[0.7rem] pt-1 ">
-            Als Tochtergesellschaft der Sparkasse Bremen AG ist die nwm
-            nordwest-media für den Kundenservice zuständig. Unsere motivierten
-            Mitarbeiter*innen helfen, beraten und lösen Probleme. Indem sie per
-            Telefon - oder auf anderen Kommunikationskanälen - mit den
-            Kund*innen der Sparkasse Bremen sprechen. Und zwar so individuell
-            wie möglich. Denn unser Ziel ist es, Menschen stets freundlich und
-            kompetent zu unterstützen.
-          </div>
+          <AreaInferiorIzquierda></AreaInferiorIzquierda>
+         
         </div>
-        {/* Imagen de la derecha */}
+        {/*----------------------- Imagen de la derecha -----------------------------*/}
 
-        <div className=" flex justify-end  col-start-2 row-start-1">
-          <img
-            src="/img/girl-large.png"
-            alt="NordWest"
-            className="imagen  h-[89vh] "
-          />
+        <div className=" flex justify-end  col-start-2 row-start-1 imagen">
+          <ImagenDerecha1></ImagenDerecha1>
+          
         </div>
+
       </div>
 
       {/* PAntalla movil xl --> ancho < 1280  */}
-      <div className="w-full xl:hidden px-6 flex flex-col items-center">
-        <div className="pt-2">
+      <div className="w-full xl:hidden  flex flex-col items-center">
+        <div className="pt-2 px-6">
           <AreaSuperiorIzquierda></AreaSuperiorIzquierda>
         </div>
 
-        <div className="mt-5 p-2 pt-8 bg-[#EFEFEF] w-[90%]  ">
+        <div className="mt-5 p-2 px-6 pt-8 bg-[#EFEFEF] w-[90%]  ">
           <AreaCentralIzquierda></AreaCentralIzquierda>
         </div>
+
+        <div className="mt-5 px-6 p-2 pt-8 bg-[#EFEFEF]   ">
+        <AreaInferiorIzquierda></AreaInferiorIzquierda>
+        </div>
+
+        <div className="w-full ">
+          
+            <ImagenDerecha2></ImagenDerecha2> 
+        </div>
+
+
       </div>
     </>
   );

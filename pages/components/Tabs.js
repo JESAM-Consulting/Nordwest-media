@@ -15,7 +15,7 @@ const Tabs = () => {
 
   const Footer = () => {
     return (
-      <div className="bg-[#464646] w-full h-[9vh] footer grid  grid-cols-[58%_12%_8%_20%]  ">
+      <div className="bg-[#464646] w-full h-[9vh] footer lg:grid  lg:grid-cols-[58%_12%_8%_20%] hidden  ">
         <div className="col-start-2  text-white font-tahoma-bold text-bold text-xs flex items-center cursor-pointer">
           <a
             onClick={(e) => {
