@@ -21,7 +21,7 @@ const AreaSuperiorIzquierda = () => {
 
 const AreaCentralIzquierda = (props) => {
   return (
-    <>
+    <div className="">
       <div className="tahoma-font-bold text-[#4B4B4B] lg:text-[2.2rem] text-[1.5rem] font-extrabold text-center lg:text-start lg:leading-[2.7rem] leading-[1.7rem] ">
         In nur 3 Schritten <br /> zu Deinem neuen Job
       </div>
@@ -33,27 +33,19 @@ const AreaCentralIzquierda = (props) => {
       </div>
       {/* TODO: centrar correctamente */}
 
-      <div className="lg:flex lg:flex-row mt-10    lg:w-[100%] w-[40%]  flex flex-col ml-[28vw] lg:justify-start  ">
+      {/* lg:justify-start */}
+      <div className="lg:flex lg:flex-row    lg:w-[100%] w-[40%]  flex flex-col ml-[28vw] lg:ml-[0vw]   ">
         <a
-          className={
-            "text-xs font-bold    block leading-normal cursor-pointer"
-            // +(openTab === 1
-            //   ? "text-white bg-blueGray-600"
-            //   : "text-blueGray-600 bg-white")
-          }
+          className= "text-xs font-bold    cursor-pointer"
           onClick={(e) => {
             e.preventDefault();
             props.updateContenido(1);
             props.updateOpenTab(1);
           }}>
-          <Opcion2
-            number={1}
-            opcionname="Kennenlernen"
-            activar={true}></Opcion2>
+          <Opcion2 number={1} opcionname="Kennenlernen" activar={true}></Opcion2>
         </a>
 
-        <a
-          className={"text-xs font-bold    block leading-normal cursor-pointer"}
+        <a className="text-xs font-bold    cursor-pointer"
           onClick={(e) => {
             e.preventDefault();
             props.updateContenido(2);
@@ -62,20 +54,16 @@ const AreaCentralIzquierda = (props) => {
           <Opcion2 number={2} opcionname="Über Dich" activar={false}></Opcion2>
         </a>
 
-        <a
-          className={"text-xs font-bold    block leading-normal cursor-pointer"}
+        <a className="text-xs font-bold   cursor-pointer"
           onClick={(e) => {
             e.preventDefault();
             props.updateContenido(3);
             props.updateOpenTab(3);
           }}>
-          <Opcion2
-            number={3}
-            opcionname="Durchstarten"
-            activar={false}></Opcion2>
+          <Opcion2 number={3} opcionname="Durchstarten" activar={false}></Opcion2>
         </a>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -127,7 +115,7 @@ const Tab01 = (props) => {
     <>
       {/*  PAntalla grande xl --> ancho > 1280 */}
 
-      <div className="xl:grid xl:grid-cols-[66%_34%] xl:grid-rows-[6vh_60vh_18vh]  xl:w-full hidden   ">
+      <div className="xl:grid xl:grid-cols-[66%_34%] xl:grid-rows-[6vh_60vh_18vh]  xl:w-full hidden    ">
         {/* ---------------------- Area Superior izquierda ----------------------     */}
         <div className="pl-10 pt-2  col-start-1 row-start-1 ">
           <AreaSuperiorIzquierda></AreaSuperiorIzquierda>
@@ -135,7 +123,8 @@ const Tab01 = (props) => {
 
         {/* ---------------------- Area Central izquierda----------------------     */}
 
-        <div className="ml-24 bg-[#EFEFEF] w-[60%] h-[37vh] border-2 col-start-1 row-start-2 self-center pt-5  pl-10">
+        <div className="ml-24 bg-[#EFEFEF] w-[60%] xl:h-[40vh] h-[32vh] col-start-1 row-start-2 self-center pt-5 mt-10 pl-10">
+         
           <AreaCentralIzquierda
             updateContenido={props.updateContenido}
             updateOpenTab={props.updateOpenTab}></AreaCentralIzquierda>
