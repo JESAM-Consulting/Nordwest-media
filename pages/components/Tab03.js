@@ -1,6 +1,9 @@
 import React from "react";
 import Opcion2 from "./Opcion2";
 
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+
 const ImagenDerecha1 = () => {
   return (
     <>
@@ -21,58 +24,57 @@ const ImagenDerecha2 = () => {
 const VentanaModal = (props) => {
   return (
     <>
-    <div
-            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
-          >
-            <div className="relative w-auto my-6 mx-auto max-w-3xl">
-              {/*content*/}
-              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                {/*header*/}
-                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-                  <h3 className="text-3xl font-semibold">
-                    Modal Title
-                  </h3>
-                  <button
-                    className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                    onClick={() => props.setShowModal(false)}
-                  >
-                    <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
-                      X
-                    </span>
-                  </button>
-                </div>
-                {/*body*/}
-                <div className="relative p-6 flex-auto">
-                  <p className="my-4 text-slate-500 text-lg leading-relaxed">
-                    I always felt like I could do anything. That’s the main
-                    thing people are controlled by! Thoughts- their perception
-                    of themselves! They're slowed down by their perception of
-                    themselves. If you're taught you can’t do anything, you
-                    won’t do anything. I was taught I could do everything.
-                  </p>
-                </div>
-                {/*footer*/}
-                <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
-                  <button
-                    className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                    onClick={() => props.setShowModal(false)}
-                  >
-                    Close
-                  </button>
-                  <button
-                    className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                    onClick={() => props.setShowModal(false)}
-                  >
-                    Save Changes
-                  </button>
-                </div>
-              </div>
+      <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+        <div className="relative w-auto my-6 mx-auto max-w-3xl">
+          {/*content*/}
+          <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+            {/*header*/}
+            <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+              <h3 className="text-3xl font-semibold">
+                Modal Title
+              </h3>
+              <button
+                className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                onClick={() => props.setShowModal(false)}
+              >
+                <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                <img src="/img/close.svg" alt="NordWest" className="  w-[100vw] " />
+                </span>
+              </button>
+            </div>
+            {/*body*/}
+            <div className="relative p-6 flex-auto">
+              <p className="my-4 text-slate-500 text-lg leading-relaxed">
+                I always felt like I could do anything. That’s the main
+                thing people are controlled by! Thoughts- their perception
+                of themselves! They're slowed down by their perception of
+                themselves. If you're taught you can’t do anything, you
+                won’t do anything. I was taught I could do everything.
+              </p>
+              <TextField id="standard-basic" label="Standard" variant="standard" />
+            </div>
+            {/*footer*/}
+            <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+              <button
+                className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                type="button"
+                onClick={() => props.setShowModal(false)}
+              >
+                Close
+              </button>
+              <button
+                className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                type="button"
+                onClick={() => props.setShowModal(false)}
+              >
+                Save Changes
+              </button>
             </div>
           </div>
-          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
-          </>
+        </div>
+      </div>
+      <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+    </>
   );
 }
 
@@ -82,10 +84,10 @@ const AreaSuperiorIzquierda = () => {
 
   return (
     <>
-    {showModal ? (
-        
-          <VentanaModal setShowModal = {setShowModal}></VentanaModal>
-        
+      {showModal ? (
+
+        <VentanaModal setShowModal={setShowModal}></VentanaModal>
+
       ) : null}
 
       <div>
@@ -96,14 +98,14 @@ const AreaSuperiorIzquierda = () => {
       </div>
       <div className=" pt-2">
         <button className="btn bg-[#E20613] rounded text-[1rem] text-[#ffffff] px-5 py-2 font-roboto"
-        type="button"
-        onClick={() => setShowModal(true)}
+          type="button"
+          onClick={() => setShowModal(true)}
         >
           Jetzt bewerben
         </button>
 
 
-      
+
 
 
       </div>
@@ -119,46 +121,46 @@ const AreaSuperiorIzquierda = () => {
       <div className="mt-0 text-[0.7rem] text-[#4B4B4B]">
         <ul>
           <li>
-         
+
             Flexible Arbeitszeiten in unserer Kernarbeitszeit (Montag bis
             Freitag von 8:00 Uhr bis 20:00 Uhr)
           </li>
           <li> Monatliches Festgehalt</li>
           <li>
-           
+
             Zahlung der Vermögenswirksamen Leistungen, sowie Förderung der
             betrieblichen Altersvorsorge
           </li>
           <li>
-          
+
             Sicherer Arbeitsplatz als Teil der systemrelevanten Infrastruktur,
             sowie 20jährige Expertise als Tochterunternehmen und Service-Center
             der Sparkasse Bremen
           </li>
           <li>
-        
+
             Persönliche und individuelle Einarbeitung (Fachschulungen und
             Kommunikation) durch unsere Fachspezialisten
           </li>
           <li>
-           
+
             Erfahrungen im Banking sammeln oder erweitern (keine Vorkenntnisse
             erforderlich)
           </li>
           <li>
-            
+
             {
               'Umfangreiche Sozialleistungen wie Beihilfen zur Gesundheitsvorsorge und Teilnahme am Angebot „Job-Ticket" der BSAG'
             }
           </li>
           <li>
-           
+
             Moderne und klimatisierte Arbeitsplätze in zentraler Lage
             Technologiepark Bremen - Homeoffice ist aber auch möglich
           </li>
           <li> Kostenlose Getränkebar (Kaffeespezialitäten, Tee, Wasser)</li>
           <li>
-           
+
             Kollegiales Arbeitsklima mit flachen Hierarchien, Kommunikation auf
             Augenhöhe und Duz-Kultur{" "}
           </li>
