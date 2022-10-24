@@ -45,7 +45,7 @@ const AreaCentralIzquierda = (props) => {
       {/* TODO: centrar correctamente */}
 
       {/* lg:justify-start */}
-      <div className="lg:flex lg:flex-row    lg:w-[100%] w-[40%]  flex flex-col ml-[28vw] lg:ml-[0vw]   ">
+      {/* <div className="lg:flex lg:flex-row    lg:w-[100%] w-[40%]  flex flex-col ml-[28vw] lg:ml-[0vw]   ">
         <a
           className= "text-xs font-bold    cursor-pointer"
           onClick={(e) => {
@@ -73,7 +73,7 @@ const AreaCentralIzquierda = (props) => {
           }}>
           <Opcion2 number={3} opcionname="Durchstarten" activar={false}></Opcion2>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -130,7 +130,7 @@ const Tab02 = (props) => {
 
        {/* ---------------------- Area Central izquierda----------------------     */}
 
-       <div className="ml-24 bg-[#EFEFEF] w-[60%] xl:h-[50vh] h-[32vh] col-start-1 row-start-2 self-center pt-5 mt-10 pl-10">
+       <div className="ml-24 bg-[#EFEFEF] w-[60%] xl:h-[44vh] h-[32vh] col-start-1 row-start-2 self-center pt-5 mt-10 pl-10">
         
          <AreaCentralIzquierda
            updateContenido={props.updateContenido}
