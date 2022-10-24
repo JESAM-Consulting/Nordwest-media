@@ -136,7 +136,7 @@ const Tabs = () => {
               
             </div>
             <div className={contenido === 2 ? "block" : "hidden"} id="link2">
-              <Tab02></Tab02>
+              <Tab02 updateContenido ={setContenido} updateOpenTab ={setOpenTab}></Tab02>
             </div>
             <div className={contenido === 3 ? "block" : "hidden"} id="link3">
               <Tab03></Tab03>
