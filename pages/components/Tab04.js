@@ -738,6 +738,13 @@ const Tab04 = () => {
       wird auf die Standardvertragsklauseln der EU-Kommission gestützt. Details
       finden Sie hier:
       https://www.wordfence.com/help/general-data-protection-regulation/.
+
+      <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     </div>
   );
 };
