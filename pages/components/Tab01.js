@@ -159,7 +159,9 @@ const Tab01 = (props) => {
         </div>
 
         <div className="mt-5 p-2 px-6 pt-8 bg-[#EFEFEF] w-[90%]  ">
-          <AreaCentralIzquierda></AreaCentralIzquierda>
+        <AreaCentralIzquierda
+            updateContenido={props.updateContenido}
+            updateOpenTab={props.updateOpenTab}></AreaCentralIzquierda>
         </div>
 
         <div className="mt-5 px-6 p-2 pt-8 bg-[#EFEFEF]   ">
