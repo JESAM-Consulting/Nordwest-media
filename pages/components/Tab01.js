@@ -70,7 +70,7 @@ const AreaCentralIzquierda = (props) => {
 const AreaInferiorIzquierda = () => {
   return (
     <div
-      className="bg-[#EFEFEF]  grid  grid-cols-[9%_80%]  lg:w-[75vw] w-[100vw]
+      className="bg-[#EFEFEF]  grid  grid-cols-[9%_80%]  lg:w-[78vw] w-[100vw]
     grid-rows-[3vh_14vh] h-100 pt-5 pl-3  leading-[0.95rem]">
       <img
         src="/img/entypo_help-with-circle.svg"
@@ -123,7 +123,7 @@ const Tab01 = (props) => {
 
         {/* ---------------------- Area Central izquierda----------------------     */}
 
-        <div className="ml-24 bg-[#EFEFEF] w-[60%] xl:h-[40vh] h-[32vh] col-start-1 row-start-2 self-center pt-5 mt-10 pl-10">
+        <div className="ml-24 bg-[#EFEFEF] w-[60%] xl:h-[42vh] h-[32vh] col-start-1 row-start-2 self-center pt-5 mt-10 pl-10">
          
           <AreaCentralIzquierda
             updateContenido={props.updateContenido}

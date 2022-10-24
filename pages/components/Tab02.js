@@ -81,7 +81,7 @@ const AreaCentralIzquierda = (props) => {
 const AreaInferiorIzquierda = () => {
   return (
     <div
-      className="bg-[#EFEFEF]  grid  grid-cols-[9%_80%]  lg:w-[75vw] w-[100vw]
+      className="bg-[#EFEFEF]  grid  grid-cols-[9%_80%]  lg:w-[78vw] w-[100vw]
     grid-rows-[3vh_14vh] h-100 pt-5 pl-3  leading-[0.95rem]">
      <img
           src="/img/entypo_help-with-circle.svg"
