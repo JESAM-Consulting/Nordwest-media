@@ -132,7 +132,7 @@ const Tabs = () => {
 
           <div className="tab-content tab-space w-[100%] ">
             <div className={contenido === 1 ? "block" : "hidden"} id="link1">
-               <Tab01></Tab01> 
+               <Tab01  updateContenido ={setContenido} updateOpenTab ={setOpenTab} ></Tab01> 
               
             </div>
             <div className={contenido === 2 ? "block" : "hidden"} id="link2">

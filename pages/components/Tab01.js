@@ -19,10 +19,9 @@ const AreaSuperiorIzquierda = () => {
   );
 };
 
-const AreaCentralIzquierda = () => {
+const AreaCentralIzquierda = (props) => {
   return (
     <>
-    
       <div className="tahoma-font-bold text-[#4B4B4B] lg:text-[2.2rem] text-[1.5rem] font-extrabold text-center lg:text-start lg:leading-[2.7rem] leading-[1.7rem] ">
         In nur 3 Schritten <br /> zu Deinem neuen Job
       </div>
@@ -32,77 +31,98 @@ const AreaCentralIzquierda = () => {
           Jetzt Bewerbung starten
         </button>
       </div>
-{/* TODO: centrar correctamente */}
-      
+      {/* TODO: centrar correctamente */}
+
       <div className="lg:flex lg:flex-row mt-10    lg:w-[100%] w-[40%]  flex flex-col ml-[28vw] lg:justify-start  ">
-        <Opcion2 number={1} opcionname="Kennenlernen" activar={true}></Opcion2>
-        <Opcion2 number={2} opcionname="Über Dich" activar={false}></Opcion2>
-        <Opcion2 number={3} opcionname="Durchstarten" activar={false}></Opcion2>
+        <a
+          className={
+            "text-xs font-bold    block leading-normal cursor-pointer"
+            // +(openTab === 1
+            //   ? "text-white bg-blueGray-600"
+            //   : "text-blueGray-600 bg-white")
+          }
+          onClick={(e) => {
+            e.preventDefault();
+            props.updateContenido(1);
+            props.updateOpenTab(1);
+          }}>
+          <Opcion2
+            number={1}
+            opcionname="Kennenlernen"
+            activar={true}></Opcion2>
+        </a>
+
+        <a
+          className={"text-xs font-bold    block leading-normal cursor-pointer"}
+          onClick={(e) => {
+            e.preventDefault();
+            props.updateContenido(2);
+            props.updateOpenTab(2);
+          }}>
+          <Opcion2 number={2} opcionname="Über Dich" activar={false}></Opcion2>
+        </a>
+
+        <a
+          className={"text-xs font-bold    block leading-normal cursor-pointer"}
+          onClick={(e) => {
+            e.preventDefault();
+            props.updateContenido(3);
+            props.updateOpenTab(3);
+          }}>
+          <Opcion2
+            number={3}
+            opcionname="Durchstarten"
+            activar={false}></Opcion2>
+        </a>
       </div>
-      
-      
-    
     </>
   );
 };
 
-
 const AreaInferiorIzquierda = () => {
   return (
-    <div className="bg-[#EFEFEF]  grid  grid-cols-[9%_80%]  lg:w-[75vw] w-[100vw]
+    <div
+      className="bg-[#EFEFEF]  grid  grid-cols-[9%_80%]  lg:w-[75vw] w-[100vw]
     grid-rows-[3vh_14vh] h-100 pt-5 pl-3  leading-[0.95rem]">
+      <img
+        src="/img/entypo_help-with-circle.svg"
+        alt="NordWest"
+        className=" justify-self-end  self-center lg:w-[2.3vw] w-[15vw]"
+      />
+      <div className=" col-start-2 text-[#8C8C8C] self-center font-tahoma text-[1rem] ">
+        Über uns
+      </div>
 
-          <img
-            src="/img/entypo_help-with-circle.svg"
-            alt="NordWest"
-            className=" justify-self-end  self-center lg:w-[2.3vw] w-[15vw]"
-          />
-          <div className=" col-start-2 text-[#8C8C8C] self-center font-tahoma text-[1rem] ">
-            Über uns
-          </div>
-
-          <div className="text-[#AFA9A9] col-start-2 self-start font-tahoma lg:w-[43vw] w-[80vw] text-[0.7rem] pt-1 ">
-            Als Tochtergesellschaft der Sparkasse Bremen AG ist die nwm
-            nordwest-media für den Kundenservice zuständig. Unsere motivierten
-            Mitarbeiter*innen helfen, beraten und lösen Probleme. Indem sie per
-            Telefon - oder auf anderen Kommunikationskanälen - mit den
-            Kund*innen der Sparkasse Bremen sprechen. Und zwar so individuell
-            wie möglich. Denn unser Ziel ist es, Menschen stets freundlich und
-            kompetent zu unterstützen.
-          </div>
-
-
+      <div className="text-[#AFA9A9] col-start-2 self-start font-tahoma lg:w-[43vw] w-[80vw] text-[0.7rem] pt-1 ">
+        Als Tochtergesellschaft der Sparkasse Bremen AG ist die nwm
+        nordwest-media für den Kundenservice zuständig. Unsere motivierten
+        Mitarbeiter*innen helfen, beraten und lösen Probleme. Indem sie per
+        Telefon - oder auf anderen Kommunikationskanälen - mit den Kund*innen
+        der Sparkasse Bremen sprechen. Und zwar so individuell wie möglich. Denn
+        unser Ziel ist es, Menschen stets freundlich und kompetent zu
+        unterstützen.
+      </div>
     </div>
+  );
+};
 
-  )
-}
-
-const ImagenDerecha1=()=>{
+const ImagenDerecha1 = () => {
   return (
     <>
-    <img
-            src="/img/girl-large.png"
-            alt="NordWest"
-            className="  h-[89vh] "
-          />
+      <img src="/img/girl-large.png" alt="NordWest" className="  h-[89vh] " />
     </>
-  )
-}
+  );
+};
 
-
-const ImagenDerecha2=()=>{
+const ImagenDerecha2 = () => {
   return (
     <>
-    <img
-            src="/img/girl-low.png"
-            alt="NordWest"
-            className="  w-[100vw] "
-          />
+      <img src="/img/girl-low.png" alt="NordWest" className="  w-[100vw] " />
     </>
-  )
-}
+  );
+};
 
-const Tab01 = () => {
+const Tab01 = (props) => {
   return (
     <>
       {/*  PAntalla grande xl --> ancho > 1280 */}
@@ -115,23 +135,21 @@ const Tab01 = () => {
 
         {/* ---------------------- Area Central izquierda----------------------     */}
 
-        <div className="ml-24 bg-[#EFEFEF] w-[60%] h-[37vh]  col-start-1 row-start-2 self-center pt-5  pl-10">
-          <AreaCentralIzquierda></AreaCentralIzquierda>
+        <div className="ml-24 bg-[#EFEFEF] w-[60%] h-[37vh] border-2 col-start-1 row-start-2 self-center pt-5  pl-10">
+          <AreaCentralIzquierda
+            updateContenido={props.updateContenido}
+            updateOpenTab={props.updateOpenTab}></AreaCentralIzquierda>
         </div>
 
         {/* ---------------------- Area Inferior izquierda ----------------------     */}
-        <div  className=" col-start-1 row-start-3 contenido ">
-
+        <div className=" col-start-1 row-start-3 contenido ">
           <AreaInferiorIzquierda></AreaInferiorIzquierda>
-         
         </div>
         {/*----------------------- Imagen de la derecha -----------------------------*/}
 
         <div className=" flex justify-end  col-start-2 row-start-1 imagen">
           <ImagenDerecha1></ImagenDerecha1>
-          
         </div>
-
       </div>
 
       {/* PAntalla movil xl --> ancho < 1280  */}
@@ -145,15 +163,12 @@ const Tab01 = () => {
         </div>
 
         <div className="mt-5 px-6 p-2 pt-8 bg-[#EFEFEF]   ">
-        <AreaInferiorIzquierda></AreaInferiorIzquierda>
+          <AreaInferiorIzquierda></AreaInferiorIzquierda>
         </div>
 
         <div className="w-full ">
-          
-            <ImagenDerecha2></ImagenDerecha2> 
+          <ImagenDerecha2></ImagenDerecha2>
         </div>
-
-
       </div>
     </>
   );
