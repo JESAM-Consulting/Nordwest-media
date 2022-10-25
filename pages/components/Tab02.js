@@ -27,7 +27,7 @@ const Tab02 = (props) => {
 
        {/* ---------------------- Area Central izquierda----------------------     */}
        {/* w-[60%] xl:h-[44vh] h-[32vh] */}
-       <div className="ml-16  col-start-1 row-start-2 self-start mt-10   ">
+       <div className="ml-16  col-start-1 row-start-2 self-start mt-5   ">
         
          <AreaCentralIzquierda
            updateContenido={props.updateContenido}

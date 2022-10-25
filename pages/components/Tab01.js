@@ -26,7 +26,7 @@ const Tab01 = (props) => {
         {/* ---------------------- Area Central izquierda----------------------     */}
 
 
-        <div className="ml-16  col-start-1 row-start-2 self-start mt-10 ">
+        <div className="ml-16  col-start-1 row-start-2 self-start mt-5  ">
          
           <AreaCentralIzquierda
             updateContenido={props.updateContenido}
@@ -99,7 +99,7 @@ const AreaCentralIzquierda = (props) => {
   return (
     // lg:w-[70%] xl:w-[60%]
     // p-6 w-[48vw]  xl:h-[34vh] h-[32vh]
-    <div className="lg:px-8 lg:py-3 xl:w-[38vw] lg:w-[45vw]  bg-[#EFEFEF] ">
+    <div className="lg:px-8 lg:py-3 xl:w-[38vw] lg:w-[45vw]  bg-[#EFEFEF] h-[39vh]">
       <div className="pt-6 tahoma-font-bold text-[#4B4B4B] xl:text-[2.2rem] lg:text-[1.2rem]
          text-[1.5rem] font-extrabold text-center lg:text-start xl:leading-[2.7rem] lg:leading-[1.7rem]  leading-[1.7rem] ">
         In nur 3 Schritten <br /> zu Deinem neuen Job
