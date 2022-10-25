@@ -7,6 +7,7 @@ import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import ImagenDerecha1 from "./ImagenDerecha1";
 import ImagenDerecha2 from "./ImagenDerecha2";
+import AreaInferiorIzquierda from "./AreaInferiorIzquierda";
 
 const VentanaModal = (props) => {
   const styles = {
@@ -132,10 +133,10 @@ const AreaSuperiorIzquierda = () => {
       ) : null}
 
       <div className="pt-4">
-        <span className="underline underline-offset-4 font-tahoma-bold text-[14px]">
+        <span className="underline underline-offset-4 font-tahoma-bold lg:text-[17px] text-[16px]">
           Jetzt Teil von
         </span>
-        <span className="font-tahoma-bold text-[14px]">der nwm werden!</span>
+        <span className="font-tahoma-bold lg:text-[17px] text-[16px]">der nwm werden!</span>
       </div>
       <div className=" pt-4">
         <button
@@ -155,12 +156,12 @@ const AreaSuperiorIzquierda = () => {
           </div>
         </button>
       </div>
-      <div className="font-tahoma-bold text-[#4B4B4B] text-[16px] mt-8    leading-[2.7rem]">
+      <div className="font-tahoma-bold text-[#4B4B4B] lg:text-[30px] text-[16px] mt-8    leading-[2.7rem]">
         <span className="underline underline-offset-8 ">Das bieten wi</span>
         <span className=" ">r Dir!</span>
       </div>
 
-      <div className="mt-0 text-[10px] text-[#4B4B4B] font-tahoma">
+      <div className="mt-0 text-[10px] lg:text-[12px] text-[#4B4B4B] font-tahoma mt-1 ml-3 lg:ml-0">
         <ul>
           <li>
             Flexible Arbeitszeiten in unserer Kernarbeitszeit (Montag bis
@@ -201,12 +202,12 @@ const AreaSuperiorIzquierda = () => {
         </ul>
       </div>
 
-      <div className="mt-8 font-tahoma-bold text-[#4B4B4B] text-[16px]   leading-[2.7rem]">
+      <div className="font-tahoma-bold text-[#4B4B4B] lg:text-[30px] text-[16px] mt-8    leading-[2.7rem]">
         <span className="underline underline-offset-8 ">Deine Aufga</span>
         <span className="">ben</span>
       </div>
 
-      <div className="font-tahoma text-[10px] text-[#4B4B4B] mb-10">
+      <div className="mt-0 text-[10px] lg:text-[12px] text-[#4B4B4B] font-tahoma mt-1 ml-3 lg:ml-0">
         <ul>
           <li>
             {" "}
@@ -228,29 +229,6 @@ const AreaSuperiorIzquierda = () => {
   );
 };
 
-const AreaInferiorIzquierda = () => {
-  return (
-    <div
-      className="bg-[#EFEFEF]  grid  grid-cols-[9%_80%]  lg:w-[78vw] w-[100vw]
-    grid-rows-[3vh_14vh] h-100 pl-3 lg:pt-3 leading-[0.95rem]">
-      <img
-        src="/img/entypo_help-with-circle.svg"
-        alt="NordWest"
-        className=" justify-self-end pt-1 self-start lg:w-[2.3vw] w-[7vw]"
-      />
-
-      <div className=" col-start-2 text-[#8C8C8C] self-center font-tahoma text-[14px] ">
-        Warum fragen wir das?
-      </div>
-
-      <div className="text-[#AFA9A9] col-start-2 self-start font-tahoma lg:w-[43vw] w-[80vw] text-[10px] pt-1 ">
-        Wir bieten einen krisensicheren Job, in dem sich unsere
-        Mit­arbei­ter*innen individuell entwickeln können. Mit flachen
-        Hierarchien und Kommunikation auf Augenhöhe.
-      </div>
-    </div>
-  );
-};
 
 const Tab03 = () => {
   return (
@@ -272,7 +250,11 @@ const Tab03 = () => {
 
         {/* ---------------------- Area Inferior izquierda ----------------------     */}
         <div className=" col-start-1 row-start-3 contenido ">
-          <AreaInferiorIzquierda></AreaInferiorIzquierda>
+          <AreaInferiorIzquierda texto1 = "Warum fragen wir das?"
+           texto2=
+            "Wir bieten einen krisensicheren Job, in dem sich unsere  Mitarbeiter*innen individuell entwickeln können. Mit flachen Hierarchien und Kommunikation auf Augenhöhe.">
+
+          </AreaInferiorIzquierda>
         </div>
         {/*----------------------- Imagen de la derecha -----------------------------*/}
 
@@ -294,7 +276,11 @@ const Tab03 = () => {
        </div> */}
 
         <div className="mt-5 px-6 p-2 pt-8 bg-[#EFEFEF]   ">
-          <AreaInferiorIzquierda></AreaInferiorIzquierda>
+        <AreaInferiorIzquierda texto1 = "Warum fragen wir das?"
+           texto2=
+            "Wir bieten einen krisensicheren Job, in dem sich unsere  Mitarbeiter*innen individuell entwickeln können. Mit flachen Hierarchien und Kommunikation auf Augenhöhe.">
+
+          </AreaInferiorIzquierda>
         </div>
 
         <div className="w-full ">
