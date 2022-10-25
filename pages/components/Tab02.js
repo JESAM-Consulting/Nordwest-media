@@ -13,8 +13,12 @@ const Tab02 = (props) => {
     <>
     {/* lg:grid lg:grid-cols-[66%_34%] lg:grid-rows-[6vh_55vh_18vh]  lg:w-full hidden  */}
    
-    <div className="  lg:grid lg:grid-cols-[66%_34%] lg:grid-rows-[6vh_55vh_18vh]  
-          xl:grid-rows-[6vh_60vh_19vh]   lg:w-full hidden   ">
+    <div className="  lg:grid 
+          lg:grid-cols-[66%_34%] 
+          lg:grid-rows-[10vh_50vh_19vh]  
+          xl:grid-rows-[10vh_53vh_19vh]   
+          lg:w-full 
+          hidden       ">
        {/* ---------------------- Area Superior izquierda ----------------------     */}
        <div className="pl-10 pt-2  col-start-1 row-start-1  ">
          <AreaSuperiorIzquierda></AreaSuperiorIzquierda>
