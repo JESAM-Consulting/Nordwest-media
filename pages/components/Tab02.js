@@ -13,12 +13,13 @@ const Tab02 = (props) => {
     <>
     {/* lg:grid lg:grid-cols-[66%_34%] lg:grid-rows-[6vh_55vh_18vh]  lg:w-full hidden  */}
    
-    <div className="  lg:grid 
-          lg:grid-cols-[66%_34%] 
-          lg:grid-rows-[10vh_50vh_19vh]  
-          xl:grid-rows-[10vh_53vh_19vh]   
-          lg:w-full 
-          hidden       ">
+    <div className="
+      lg:grid 
+      lg:grid-cols-[66%_34%] 
+      lg:grid-rows-[10vh_50vh_19vh]  
+      xl:grid-rows-[15vh_48vh_19vh]   
+      lg:w-full 
+      hidden     ">
        {/* ---------------------- Area Superior izquierda ----------------------     */}
        <div className="pl-10 pt-2  col-start-1 row-start-1  ">
          <AreaSuperiorIzquierda></AreaSuperiorIzquierda>
@@ -26,7 +27,7 @@ const Tab02 = (props) => {
 
        {/* ---------------------- Area Central izquierda----------------------     */}
        {/* w-[60%] xl:h-[44vh] h-[32vh] */}
-       <div className="ml-16 mt-10  col-start-1 row-start-2 self-center   ">
+       <div className="ml-16  col-start-1 row-start-2 self-start mt-10   ">
         
          <AreaCentralIzquierda
            updateContenido={props.updateContenido}
