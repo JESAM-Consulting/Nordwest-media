@@ -13,48 +13,14 @@ const Tabs = () => {
 
   const [contenido, setContenido] = React.useState(1);
 
-  const Footer = () => {
-    return (
-      <div className="bg-[#464646] w-full h-[9vh] footer lg:grid  lg:grid-cols-[58%_12%_8%_20%] hidden  ">
-        <div className="col-start-2  text-white font-tahoma-bold text-bold text-xs flex items-center cursor-pointer">
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-
-              setContenido(4);
-            }}>
-            Datenschutzerklärung
-          </a>
-        </div>
-
-        <div className="col-start-3 text-white font-tahoma-bold text-xs flex items-center cursor-pointer">
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-
-              setContenido(5);
-            }}>
-            Impressum
-          </a>
-        </div>
-
-        <div className="col-start-4 flex flex-row items-center">
-          <a className="w-[4%]" href="https://www.facebook.com">
-            <img src="/img/brandico_facebook.svg" alt="NordWest" />
-          </a>
-          <a className="ml-5 w-[11%]" href="https://www.instagram.com">
-            <img src="/img/bxl_instagram-alt.svg" alt="NordWest" />
-          </a>
-        </div>
-      </div>
-    );
-  };
   return (
     <>
-      {/* <div className="flex flex-wrap"> */}
-        {/* <div className="w-full "> */}
-          <div className="grid menu grid-cols-[40%_18%_18%_18%] xl:grid-cols-[15%_21%_21%_21%] bg-[#ffffff] h-[9vh] lg:h-[15vh] xl:h-[10vh]">
-            <div className=" flex justify-center items-center w-[90%] lg:w-[50%] p-1 ml-4">
+{/*------------------------ Menu superior ----------------------------*/}
+          <div className="grid menu grid-cols-[40%_18%_18%_18%] lg:grid-cols-[15%_21%_21%_21%] 
+                           bg-[#ffffff] h-[10vh] ">
+
+
+            <div className=" flex justify-center items-center w-[90%] lg:w-[70%] p-1 ml-4">
               <img src="/img/nwm_logo_400px.png" alt="NordWest" />
             </div>
             <div className=" flex justify-center items-center ">
@@ -127,7 +93,7 @@ const Tabs = () => {
 
           <Linea selected={openTab}></Linea>
 
-          {/* -------------  Contenido ----------- */}
+          {/* ---------------------------------  Contenido ------------------------------------------ */}
 
 
           <div className="tab-content tab-space w-[100%] ">
@@ -157,12 +123,51 @@ const Tabs = () => {
        
 
        
-        {/* </div> */}
-        
-      {/* </div> */}
+   
       
     </>
   );
 };
+
+
+
+
+const Footer = () => {
+  return (
+    <div className="bg-[#464646] w-full h-[9vh] footer lg:grid  lg:grid-cols-[58%_14%_10%_20%] hidden  ">
+      <div className="col-start-2  text-white font-tahoma-bold text-bold text-xs flex items-center cursor-pointer">
+        <a
+          onClick={(e) => {
+            e.preventDefault();
+
+            setContenido(4);
+          }}>
+          Datenschutzerklärung 
+        </a>
+      </div>
+
+      <div className="col-start-3 text-white font-tahoma-bold text-xs flex items-center cursor-pointer">
+        <a
+          onClick={(e) => {
+            e.preventDefault();
+
+            setContenido(5);
+          }}>
+          Impressum
+        </a>
+      </div>
+
+      <div className="col-start-4 flex flex-row items-center">
+        <a className="w-[4%]" href="https://www.facebook.com">
+          <img src="/img/brandico_facebook.svg" alt="NordWest" />
+        </a>
+        <a className="ml-5 w-[11%]" href="https://www.instagram.com">
+          <img src="/img/bxl_instagram-alt.svg" alt="NordWest" />
+        </a>
+      </div>
+    </div>
+  );
+};
+
 
 export default Tabs;

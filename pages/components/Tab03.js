@@ -9,6 +9,70 @@ import ImagenDerecha1 from "./ImagenDerecha1";
 import ImagenDerecha2 from "./ImagenDerecha2";
 import AreaInferiorIzquierda from "./AreaInferiorIzquierda";
 
+
+const Tab03 = () => {
+  return (
+    <>
+      <div className="lg:grid lg:grid-cols-[66%_34%] lg:grid-rows-[6vh_60vh_18vh]  lg:w-full hidden    ">
+        {/* ---------------------- Area Superior izquierda ----------------------     */}
+        <div className="pl-10 pt-2  col-start-1 row-start-1 ">
+          <AreaSuperiorIzquierda></AreaSuperiorIzquierda>
+        </div>
+
+        {/* ---------------------- Area Central izquierda----------------------     */}
+
+        {/* <div className="ml-24 bg-[#EFEFEF] w-[60%] xl:h-[40vh] h-[32vh] col-start-1 row-start-2 self-center pt-5 mt-10 pl-10">
+        
+         <AreaCentralIzquierda
+           updateContenido={props.updateContenido}
+           updateOpenTab={props.updateOpenTab}></AreaCentralIzquierda>
+       </div> */}
+
+        {/* ---------------------- Area Inferior izquierda ----------------------     */}
+        <div className=" col-start-1 row-start-3 contenido ">
+          <AreaInferiorIzquierda texto1 = "Warum fragen wir das?"
+           texto2=
+            "Wir bieten einen krisensicheren Job, in dem sich unsere  Mitarbeiter*innen individuell entwickeln können. Mit flachen Hierarchien und Kommunikation auf Augenhöhe.">
+
+          </AreaInferiorIzquierda>
+        </div>
+        {/*----------------------- Imagen de la derecha -----------------------------*/}
+
+        <div className=" flex justify-end  col-start-2 row-start-1 imagen">
+          <ImagenDerecha1></ImagenDerecha1>
+        </div>
+      </div>
+
+      {/* PAntalla movil xl --> ancho < 1280  */}
+      <div className="w-full lg:hidden  flex flex-col items-center">
+        <div className="pt-2 px-6">
+          <AreaSuperiorIzquierda></AreaSuperiorIzquierda>
+        </div>
+
+        {/* <div className="mt-5 p-2 px-6 pt-8 bg-[#EFEFEF] w-[90%]  ">
+       <AreaCentralIzquierda
+           updateContenido={props.updateContenido}
+           updateOpenTab={props.updateOpenTab}></AreaCentralIzquierda>
+       </div> */}
+
+        <div className="mt-5 px-6 p-2 pt-8 bg-[#EFEFEF]   ">
+        <AreaInferiorIzquierda texto1 = "Warum fragen wir das?"
+           texto2=
+            "Wir bieten einen krisensicheren Job, in dem sich unsere  Mitarbeiter*innen individuell entwickeln können. Mit flachen Hierarchien und Kommunikation auf Augenhöhe.">
+
+          </AreaInferiorIzquierda>
+        </div>
+
+        <div className="w-full ">
+          <ImagenDerecha2></ImagenDerecha2>
+        </div>
+      </div>
+    </>
+  );
+};
+
+
+
 const VentanaModal = (props) => {
   const styles = {
     ".MuiFormControlLabel-label": {
@@ -229,66 +293,5 @@ const AreaSuperiorIzquierda = () => {
   );
 };
 
-
-const Tab03 = () => {
-  return (
-    <>
-      <div className="xl:grid xl:grid-cols-[66%_34%] xl:grid-rows-[6vh_60vh_18vh]  xl:w-full hidden    ">
-        {/* ---------------------- Area Superior izquierda ----------------------     */}
-        <div className="pl-10 pt-2  col-start-1 row-start-1 ">
-          <AreaSuperiorIzquierda></AreaSuperiorIzquierda>
-        </div>
-
-        {/* ---------------------- Area Central izquierda----------------------     */}
-
-        {/* <div className="ml-24 bg-[#EFEFEF] w-[60%] xl:h-[40vh] h-[32vh] col-start-1 row-start-2 self-center pt-5 mt-10 pl-10">
-        
-         <AreaCentralIzquierda
-           updateContenido={props.updateContenido}
-           updateOpenTab={props.updateOpenTab}></AreaCentralIzquierda>
-       </div> */}
-
-        {/* ---------------------- Area Inferior izquierda ----------------------     */}
-        <div className=" col-start-1 row-start-3 contenido ">
-          <AreaInferiorIzquierda texto1 = "Warum fragen wir das?"
-           texto2=
-            "Wir bieten einen krisensicheren Job, in dem sich unsere  Mitarbeiter*innen individuell entwickeln können. Mit flachen Hierarchien und Kommunikation auf Augenhöhe.">
-
-          </AreaInferiorIzquierda>
-        </div>
-        {/*----------------------- Imagen de la derecha -----------------------------*/}
-
-        <div className=" flex justify-end  col-start-2 row-start-1 imagen">
-          <ImagenDerecha1></ImagenDerecha1>
-        </div>
-      </div>
-
-      {/* PAntalla movil xl --> ancho < 1280  */}
-      <div className="w-full xl:hidden  flex flex-col items-center">
-        <div className="pt-2 px-6">
-          <AreaSuperiorIzquierda></AreaSuperiorIzquierda>
-        </div>
-
-        {/* <div className="mt-5 p-2 px-6 pt-8 bg-[#EFEFEF] w-[90%]  ">
-       <AreaCentralIzquierda
-           updateContenido={props.updateContenido}
-           updateOpenTab={props.updateOpenTab}></AreaCentralIzquierda>
-       </div> */}
-
-        <div className="mt-5 px-6 p-2 pt-8 bg-[#EFEFEF]   ">
-        <AreaInferiorIzquierda texto1 = "Warum fragen wir das?"
-           texto2=
-            "Wir bieten einen krisensicheren Job, in dem sich unsere  Mitarbeiter*innen individuell entwickeln können. Mit flachen Hierarchien und Kommunikation auf Augenhöhe.">
-
-          </AreaInferiorIzquierda>
-        </div>
-
-        <div className="w-full ">
-          <ImagenDerecha2></ImagenDerecha2>
-        </div>
-      </div>
-    </>
-  );
-};
 
 export default Tab03;
