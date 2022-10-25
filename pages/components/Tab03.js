@@ -208,11 +208,12 @@ const AreaSuperiorIzquierda = () => {
       ) : null}
 
       <div className="pt-4">
-        <span className="underline underline-offset-4 font-tahoma-bold lg:text-[17px] text-[16px]">
+        <span className="underline underline-offset-4 font-tahoma-bold text-[17px]">
           Jetzt Teil von
         </span>
-        <span className="font-tahoma-bold lg:text-[17px] text-[16px]">der nwm werden!</span>
+        <span className="font-tahoma-bold text-[17px]]">der nwm werden!</span>
       </div>
+
       <div className=" pt-4">
         <button
           className="btn bg-[#E20613] rounded  px-8 py-2 text-[12px] text-[#ffffff] font-tahoma-bold lg:hidden "

@@ -80,13 +80,13 @@ const Tab01 = (props) => {
 const AreaSuperiorIzquierda = () => {
   return (
     <>
-      <div>
-        <span className="underline underline-offset-4 font-tahoma-bold text-[0.9rem]">
+      <div className="pt-4">
+        <span className="underline underline-offset-4 font-tahoma-bold text-[17px]">
           Jetzt Teil von
         </span>
-        <span className="font-tahoma-bold text-[0.9rem]">der nwm werden!</span>
+        <span className="font-tahoma-bold text-[17px]">der nwm werden!</span>
       </div>
-      <div className="font-tahoma text-[0.85rem] text-[0.65rem] text-[#AFA9A9] w-[90%] xl:w-[40%] lg:w-[80%] pt-2">
+      <div className="font-tahoma xl:text-[15px] text-[12px] lg:text-[11px] text-[#AFA9A9] w-[90%] xl:w-[60%] lg:w-[100%]  pt-2">
         Wir bieten einen krisensicheren Job, in dem sich unsere
         Mitarbeiter*innen individuell entwickeln können. Mit flachen Hierarchien
         und Kommunikation auf Augenhöhe.
