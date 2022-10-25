@@ -53,8 +53,8 @@ const Tabs = () => {
     <>
       {/* <div className="flex flex-wrap"> */}
         {/* <div className="w-full "> */}
-          <div className="grid menu grid-cols-[40%_18%_18%_18%] xl:grid-cols-[15%_21%_21%_21%] bg-[#ffffff] h-[10vh] lg:h-[15vh] xl:h-[10vh]">
-            <div className=" flex justify-center items-center w-[90%] lg:w-[50%] xl:w-[80%] p-1 ml-4">
+          <div className="grid menu grid-cols-[40%_18%_18%_18%] xl:grid-cols-[15%_21%_21%_21%] bg-[#ffffff] h-[9vh] lg:h-[15vh] xl:h-[10vh]">
+            <div className=" flex justify-center items-center w-[90%] lg:w-[50%] p-1 ml-4">
               <img src="/img/nwm_logo_400px.png" alt="NordWest" />
             </div>
             <div className=" flex justify-center items-center ">

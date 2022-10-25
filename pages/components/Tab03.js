@@ -8,21 +8,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import ImagenDerecha1 from "./ImagenDerecha1";
 import ImagenDerecha2 from "./ImagenDerecha2";
 
-// const ImagenDerecha1 = () => {
-//   return (
-//     <>
-//       <img src="/img/girl-large.png" alt="NordWest" className="  h-[89vh] " />
-//     </>
-//   );
-// };
 
-// const ImagenDerecha2 = () => {
-//   return (
-//     <>
-//       <img src="/img/girl-low.png" alt="NordWest" className="  w-[100vw] " />
-//     </>
-//   );
-// };
 
 
 const VentanaModal = (props) => {
@@ -130,18 +116,19 @@ const AreaSuperiorIzquierda = () => {
 
       ) : null}
 
-      <div>
-        <span className="underline underline-offset-4 font-tahoma-bold text-[0.9rem]">
+      <div className="pt-4">
+        <span className="underline underline-offset-4 font-tahoma-bold text-[14px]">
           Jetzt Teil von
         </span>
-        <span className="font-tahoma-bold text-[0.9rem]">der nwm werden!</span>
+        <span className="font-tahoma-bold text-[14px]">der nwm werden!</span>
       </div>
-      <div className=" pt-2">
-        <button className="btn bg-[#E20613] rounded text-[1rem] text-[#ffffff] px-5 py-2 font-roboto"
+      <div className=" pt-4">
+        <button className="btn bg-[#E20613] rounded  px-8 py-2 text-[12px] text-[#ffffff] font-tahoma-bold"
           type="button"
           onClick={() => setShowModal(true)}
         >
           Jetzt bewerben
+          
         </button>
 
 
@@ -149,16 +136,16 @@ const AreaSuperiorIzquierda = () => {
 
 
       </div>
-      <div className="tahoma-font-bold text-[#4B4B4B] text-[1.2rem] font-extrabold   leading-[2.7rem]">
-        <span className="underline underline-offset-4 ">
-          Das bie
+      <div className="font-tahoma-bold text-[#4B4B4B] text-[16px] mt-8    leading-[2.7rem]">
+        <span className="underline underline-offset-8 ">
+          Das bieten wi
         </span>
         <span className=" ">
-          ten wir Dir!
+         r Dir!
         </span>
       </div>
 
-      <div className="mt-0 text-[0.7rem] text-[#4B4B4B]">
+      <div className="mt-0 text-[10px] text-[#4B4B4B] font-tahoma">
         <ul>
           <li>
 
@@ -207,16 +194,16 @@ const AreaSuperiorIzquierda = () => {
         </ul>
       </div>
 
-      <div className=" tahoma-font-bold text-[#4B4B4B] text-[1.2rem] font-extrabold   leading-[2.7rem]">
-        <span className="underline underline-offset-4 ">
-          Deine A
+      <div className="mt-8 font-tahoma-bold text-[#4B4B4B] text-[16px]   leading-[2.7rem]">
+        <span className="underline underline-offset-8 ">
+          Deine Aufga
         </span>
         <span className="">
-          ufgaben
+          ben
         </span>
       </div>
 
-      <div className=" text-[0.7rem] text-[#4B4B4B]">
+      <div className="font-tahoma text-[10px] text-[#4B4B4B] mb-10">
         <ul>
           <li>
             {" "}
@@ -242,17 +229,18 @@ const AreaInferiorIzquierda = () => {
   return (
     <div
       className="bg-[#EFEFEF]  grid  grid-cols-[9%_80%]  lg:w-[78vw] w-[100vw]
-    grid-rows-[3vh_14vh] h-100 pt-5 pl-3  leading-[0.95rem]">
+    grid-rows-[3vh_14vh] h-100 pl-3 lg:pt-3 leading-[0.95rem]">
       <img
         src="/img/entypo_help-with-circle.svg"
         alt="NordWest"
-        className=" justify-self-end  self-center w-[2.3vw]"
+        className=" justify-self-end pt-1 self-start lg:w-[2.3vw] w-[7vw]"
       />
-      <div className=" col-start-2 text-[#8C8C8C] self-center font-tahoma text-[1rem] ">
+      
+      <div className=" col-start-2 text-[#8C8C8C] self-center font-tahoma text-[14px] ">
         Warum fragen wir das?
       </div>
 
-      <div className="text-[#AFA9A9] col-start-2 self-start font-tahoma w-[43vw] text-[0.7rem] pt-1 ">
+      <div className="text-[#AFA9A9] col-start-2 self-start font-tahoma lg:w-[43vw] w-[80vw] text-[10px] pt-1 ">
         Wir bieten einen krisensicheren Job, in dem sich unsere
         Mit­arbei­ter*innen individuell entwickeln können. Mit flachen
         Hierarchien und Kommunikation auf Augenhöhe.
