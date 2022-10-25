@@ -1,28 +1,21 @@
 import React from "react";
 import Opcion2 from "./Opcion2";
 
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import Checkbox from '@mui/material/Checkbox';
-import FormControlLabel from '@mui/material/FormControlLabel';
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+import Checkbox from "@mui/material/Checkbox";
+import FormControlLabel from "@mui/material/FormControlLabel";
 import ImagenDerecha1 from "./ImagenDerecha1";
 import ImagenDerecha2 from "./ImagenDerecha2";
 
-
-
-
 const VentanaModal = (props) => {
-
- 
-
   const styles = {
     ".MuiFormControlLabel-label": {
       fontSize: "0.55rem",
-      fontFamily: "Inter-Light !important"
+      fontFamily: "Inter-Light !important",
       // color:"red"
-    }
- };
- 
+    },
+  };
 
   return (
     <>
@@ -32,88 +25,110 @@ const VentanaModal = (props) => {
           <div className="border-0 pt-6 pb-10 rounded-sm shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
             {/*header*/}
             <div className="flex items-start justify-between p-1  ">
+              <img src="/img/nwm_logo_400px.png" className="w-[40%] ml-7" />
 
-              <img src="/img/nwm_logo_400px.png" className="w-[40%] ml-7"/>
-
-              <button className="p-1 ml-auto mr-6 border-0 text-black  float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+              <button
+                className="p-1 ml-auto mr-6 border-0 text-black  float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                 onClick={() => props.setShowModal(false)}>
-
                 <span className=" opacity-1 h-8 w-8 text-2xl block outline-none focus:outline-none">
                   <img src="/img/ei_close.svg" />
-
-
                 </span>
               </button>
             </div>
             {/*body*/}
             <div className="relative  mx-10 flex-auto ">
-              <div className=" font-inter-regular  mt-6 text-[1rem]">Jetzt bewerben</div>
-              <div className=" font-inter-light mt-2 text-[0.6rem]">Du haben es fast geschafft!</div>
-              <div className=" font-inter-light mt-2 text-[0.9rem]">So können wir Dich erreichen</div>
-              <div className="mb-1">
-                <TextField className=" w-full h-[5vh]" id="standard-basic" label="Vorname" variant="standard" />
+              <div className=" font-inter-regular  mt-6 text-[1rem]">
+                Jetzt bewerben
+              </div>
+              <div className=" font-inter-light mt-2 text-[0.6rem]">
+                Du haben es fast geschafft!
+              </div>
+              <div className=" font-inter-light mt-2 text-[0.9rem]">
+                So können wir Dich erreichen
               </div>
               <div className="mb-1">
-                <TextField className=" w-full h-[5vh]" id="nachname" label="Nachname" variant="standard" />
+                <TextField
+                  className=" w-full h-[5vh]"
+                  id="standard-basic"
+                  label="Vorname"
+                  variant="standard"
+                />
+              </div>
+              <div className="mb-1">
+                <TextField
+                  className=" w-full h-[5vh]"
+                  id="nachname"
+                  label="Nachname"
+                  variant="standard"
+                />
               </div>
 
               <div className="mb-1">
-                <TextField className=" w-full h-[5vh]" id="Postleitzahl" label="Postleitzahl" variant="standard" />
+                <TextField
+                  className=" w-full h-[5vh]"
+                  id="Postleitzahl"
+                  label="Postleitzahl"
+                  variant="standard"
+                />
               </div>
 
               <div className="mb-1">
-                <TextField  className=" w-full h-[5vh]" id="Email" label="Email" variant="standard" />
+                <TextField
+                  className=" w-full h-[5vh]"
+                  id="Email"
+                  label="Email"
+                  variant="standard"
+                />
               </div>
 
               <div className="mb-1">
-                <TextField className=" w-full h-[5vh]" id="Telefon" label="Telefon" variant="standard" />
+                <TextField
+                  className=" w-full h-[5vh]"
+                  id="Telefon"
+                  label="Telefon"
+                  variant="standard"
+                />
               </div>
-
-            
-
-
-
-
-
 
               <div className="mt-6">
                 <button
                   className="btn bg-[#E20613] rounded text-[1rem] text-[#ffffff] px-7 py-1 font-roboto ease-linear transition-all duration-150"
                   type="button"
-                  onClick={() => props.setShowModal(false)}
-                >
+                  onClick={() => props.setShowModal(false)}>
                   Absenden
                 </button>
               </div>
 
               <div>
-                
-
-                <FormControlLabel sx = {styles} control={<Checkbox defaultChecked size="small" sx={{ '& .MuiSvgIcon-root': { fontSize: 11 } }}  />} label=" Hiermit akzeptiere ich die geltenden Datenschutzbestimmungen." />
+                <FormControlLabel
+                  sx={styles}
+                  control={
+                    <Checkbox
+                      defaultChecked
+                      size="small"
+                      sx={{ "& .MuiSvgIcon-root": { fontSize: 11 } }}
+                    />
+                  }
+                  label=" Hiermit akzeptiere ich die geltenden Datenschutzbestimmungen."
+                />
                 {/* <Checkbox {...label} size="small"  sx={{ '& .MuiSvgIcon-root': { fontSize: 14 } }} /> */}
-
               </div>
-
             </div>
-
           </div>
         </div>
       </div>
       <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
     </>
   );
-}
+};
 
 const AreaSuperiorIzquierda = () => {
-
   const [showModal, setShowModal] = React.useState(false);
 
   return (
     <>
       {showModal ? (
-
         <VentanaModal setShowModal={setShowModal}></VentanaModal>
-
       ) : null}
 
       <div className="pt-4">
@@ -123,71 +138,63 @@ const AreaSuperiorIzquierda = () => {
         <span className="font-tahoma-bold text-[14px]">der nwm werden!</span>
       </div>
       <div className=" pt-4">
-        <button className="btn bg-[#E20613] rounded  px-8 py-2 text-[12px] text-[#ffffff] font-tahoma-bold"
+        <button
+          className="btn bg-[#E20613] rounded  px-8 py-2 text-[12px] text-[#ffffff] font-tahoma-bold lg:hidden "
           type="button"
-          onClick={() => setShowModal(true)}
-        >
+          onClick={() => setShowModal(true)}>
           Jetzt bewerben
-          
         </button>
 
-
-
-
-
+        <button
+          className="btn bg-[#E20613] rounded  px-8 py-2 text-[12px] text-[#ffffff] font-tahoma-bold hidden lg:block"
+          type="button"
+          onClick={() => setShowModal(true)}>
+          <div className="font-montserrat-bold text-[12px]">Jetzt bewerben</div>
+          <div className="font-montserrat text-[11px]">
+            (ohne Lebenslauf in 30 Sek.)
+          </div>
+        </button>
       </div>
       <div className="font-tahoma-bold text-[#4B4B4B] text-[16px] mt-8    leading-[2.7rem]">
-        <span className="underline underline-offset-8 ">
-          Das bieten wi
-        </span>
-        <span className=" ">
-         r Dir!
-        </span>
+        <span className="underline underline-offset-8 ">Das bieten wi</span>
+        <span className=" ">r Dir!</span>
       </div>
 
       <div className="mt-0 text-[10px] text-[#4B4B4B] font-tahoma">
         <ul>
           <li>
-
             Flexible Arbeitszeiten in unserer Kernarbeitszeit (Montag bis
             Freitag von 8:00 Uhr bis 20:00 Uhr)
           </li>
           <li> Monatliches Festgehalt</li>
           <li>
-
             Zahlung der Vermögenswirksamen Leistungen, sowie Förderung der
             betrieblichen Altersvorsorge
           </li>
           <li>
-
             Sicherer Arbeitsplatz als Teil der systemrelevanten Infrastruktur,
             sowie 20jährige Expertise als Tochterunternehmen und Service-Center
             der Sparkasse Bremen
           </li>
           <li>
-
             Persönliche und individuelle Einarbeitung (Fachschulungen und
             Kommunikation) durch unsere Fachspezialisten
           </li>
           <li>
-
             Erfahrungen im Banking sammeln oder erweitern (keine Vorkenntnisse
             erforderlich)
           </li>
           <li>
-
             {
               'Umfangreiche Sozialleistungen wie Beihilfen zur Gesundheitsvorsorge und Teilnahme am Angebot „Job-Ticket" der BSAG'
             }
           </li>
           <li>
-
             Moderne und klimatisierte Arbeitsplätze in zentraler Lage
             Technologiepark Bremen - Homeoffice ist aber auch möglich
           </li>
           <li> Kostenlose Getränkebar (Kaffeespezialitäten, Tee, Wasser)</li>
           <li>
-
             Kollegiales Arbeitsklima mit flachen Hierarchien, Kommunikation auf
             Augenhöhe und Duz-Kultur{" "}
           </li>
@@ -195,12 +202,8 @@ const AreaSuperiorIzquierda = () => {
       </div>
 
       <div className="mt-8 font-tahoma-bold text-[#4B4B4B] text-[16px]   leading-[2.7rem]">
-        <span className="underline underline-offset-8 ">
-          Deine Aufga
-        </span>
-        <span className="">
-          ben
-        </span>
+        <span className="underline underline-offset-8 ">Deine Aufga</span>
+        <span className="">ben</span>
       </div>
 
       <div className="font-tahoma text-[10px] text-[#4B4B4B] mb-10">
@@ -235,7 +238,7 @@ const AreaInferiorIzquierda = () => {
         alt="NordWest"
         className=" justify-self-end pt-1 self-start lg:w-[2.3vw] w-[7vw]"
       />
-      
+
       <div className=" col-start-2 text-[#8C8C8C] self-center font-tahoma text-[14px] ">
         Warum fragen wir das?
       </div>
