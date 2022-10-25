@@ -5,10 +5,10 @@ const AreaSuperiorIzquierda = () => {
   return (
     <>
       <div>
-          <span className="underline underline-offset-4 font-tahoma-bold text-[0.8rem]">
+          <span className="underline underline-offset-4 font-tahoma-bold text-[0.9rem]">
             Jetzt Teil von
           </span>
-          <span className="font-tahoma-bold text-[0.8rem]">
+          <span className="font-tahoma-bold text-[0.9rem]">
             der nwm werden!
           </span>
         </div>

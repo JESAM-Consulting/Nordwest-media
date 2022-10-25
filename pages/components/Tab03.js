@@ -129,10 +129,10 @@ const AreaSuperiorIzquierda = () => {
       ) : null}
 
       <div>
-        <span className="underline underline-offset-4 font-tahoma-bold text-[0.8rem]">
+        <span className="underline underline-offset-4 font-tahoma-bold text-[0.9rem]">
           Jetzt Teil von
         </span>
-        <span className="font-tahoma-bold text-[0.8rem]">der nwm werden!</span>
+        <span className="font-tahoma-bold text-[0.9rem]">der nwm werden!</span>
       </div>
       <div className=" pt-2">
         <button className="btn bg-[#E20613] rounded text-[1rem] text-[#ffffff] px-5 py-2 font-roboto"
