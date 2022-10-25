@@ -63,7 +63,39 @@ a {
 
 
 
+@font-face {
+  font-family: Inter-Regular;
+  src: url("/font/Inter-Regular.otf") format("opentype");
+}
 
+
+@font-face {
+  font-family: Inter-Light;
+  src: url("/font/Inter-Light.otf") format("opentype");
+}
+
+
+@font-face {
+  font-family: Inter-Bold;
+  src: url("/font/Inter-Bold.otf") format("opentype");
+}
+
+
+
+.font-inter-regular {
+  font-family: Inter-Regular;
+  line-height: 1;
+}
+
+.font-inter-light {
+  font-family: Inter-Light;
+  line-height: 1;
+}
+
+.font-inter-bold {
+  font-family: Inter-Bold;
+  line-height: 1;
+}
 
 .font-roboto {
   font-family: Roboto-Regular;
@@ -84,6 +116,7 @@ a {
   font-family: Tahoma-Bold;
   /* font-weight: 100; */
 }
+
 
 
 .footer{
@@ -139,3 +172,10 @@ li::before {
 li {
   color: green;
 } */
+
+.MuiFormLabel-root {
+  /* color: #E40067!important; */
+  font-family:  Inter-Light !important;
+  font-size: 0.9rem!important; 
+}
+

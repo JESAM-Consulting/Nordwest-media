@@ -37,10 +37,10 @@ const VentanaModal = (props) => {
 
               <img src="/img/nwm_logo_400px.png" />
 
-              <button className="p-1 ml-auto  border-0 text-black  float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+              <button className="p-1 ml-auto mr-6 border-0 text-black  float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                 onClick={() => props.setShowModal(false)}>
 
-                <span className=" opacity-1 mr-4 h-8 w-8 text-2xl block outline-none focus:outline-none">
+                <span className=" opacity-1 h-8 w-8 text-2xl block outline-none focus:outline-none">
                   <img src="/img/ei_close.svg" />
 
 
@@ -48,27 +48,27 @@ const VentanaModal = (props) => {
               </button>
             </div>
             {/*body*/}
-            <div className="relative  mx-10 flex-auto font-roboto">
-              <div className=" font-bold mt-6 text-[0.9rem]">Jetzt bewerben</div>
-              <div className=" mt-1 text-[0.6rem]">Du haben es fast geschafft!</div>
-              <div className=" mt-1 text-[0.9rem]">So können wir Dich erreichen</div>
-              <div>
-                <TextField id="standard-basic" label="Vorname" variant="standard" />
+            <div className="relative  mx-10 flex-auto ">
+              <div className=" font-inter-regular  mt-6 text-[1rem]">Jetzt bewerben</div>
+              <div className=" font-inter-light mt-2 text-[0.6rem]">Du haben es fast geschafft!</div>
+              <div className=" font-inter-light mt-2 text-[0.9rem]">So können wir Dich erreichen</div>
+              <div className="mb-1">
+                <TextField className=" w-full h-[5vh]" id="standard-basic" label="Vorname" variant="standard" />
               </div>
-              <div>
-                <TextField id="nachname" label="Nachname" variant="standard" />
-              </div>
-
-              <div>
-                <TextField id="Postleitzahl" label="Postleitzahl" variant="standard" />
+              <div className="mb-1">
+                <TextField className=" w-full h-[5vh]" id="nachname" label="Nachname" variant="standard" />
               </div>
 
-              <div>
-                <TextField id="Email" label="Email" variant="standard" />
+              <div className="mb-1">
+                <TextField className=" w-full h-[5vh]" id="Postleitzahl" label="Postleitzahl" variant="standard" />
               </div>
 
-              <div>
-                <TextField id="Telefon" label="Telefon" variant="standard" />
+              <div className="mb-1">
+                <TextField  className=" w-full h-[5vh]" id="Email" label="Email" variant="standard" />
+              </div>
+
+              <div className="mb-1">
+                <TextField className=" w-full h-[5vh]" id="Telefon" label="Telefon" variant="standard" />
               </div>
 
             
@@ -78,7 +78,7 @@ const VentanaModal = (props) => {
 
 
 
-              <div className="mt-2">
+              <div className="mt-6">
                 <button
                   className="btn bg-[#E20613] rounded text-[1rem] text-[#ffffff] px-7 py-1 font-roboto ease-linear transition-all duration-150"
                   type="button"
