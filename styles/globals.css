@@ -161,6 +161,17 @@ font-family: "Montserrat-Bold";
   left: 0px;
 }
 
+
+
+.text-over-image2{
+  position: absolute;
+  z-index: 1000000;
+  overflow: hidden;
+  bottom: 16vh;
+  left: 8vw;
+}
+
+
 .imagen {
   z-index: -5;
   margin-top:-4vh; 

@@ -68,7 +68,8 @@ const Tab02 = (props) => {
        </div>
 
        <div className="w-full ">
-         <ImagenDerecha2></ImagenDerecha2>
+        
+         <ImagenDerecha2 updateContenido ={props.updateContenido}></ImagenDerecha2>
        </div>
      </div>
    </>
@@ -104,8 +105,8 @@ const AreaCentralIzquierda = (props) => {
     // p-6 w-[48vw]  xl:h-[34vh] h-[32vh]
     
     <div className="lg:px-8 lg:py-1 xl:w-[38vw] lg:w-[45vw] bg-[#EFEFEF] ">
-      <div className="pt-6 px-4 font-tahoma-bold text-[#4B4B4B] text-center lg:text-start 
-          text-[20px]
+      <div className="pt-6 px-4 lg:px-0 font-tahoma-bold text-[#4B4B4B] text-center lg:text-start 
+          text-[19px]
           font-[700] 
           leading-[30x]">
       Was trifft am besten auf Dich zu?

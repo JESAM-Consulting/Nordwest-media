@@ -10,7 +10,7 @@ import ImagenDerecha2 from "./ImagenDerecha2";
 import AreaInferiorIzquierda from "./AreaInferiorIzquierda";
 
 
-const Tab03 = () => {
+const Tab03 = (props) => {
   return (
     <>
     {/*  lg:grid lg:grid-cols-[66%_34%] lg:grid-rows-[6vh_60vh_18vh]  lg:w-full hidden */}
@@ -75,7 +75,7 @@ const Tab03 = () => {
         </div>
 
         <div className="w-full ">
-          <ImagenDerecha2></ImagenDerecha2>
+          <ImagenDerecha2 updateContenido ={props.updateContenido}></ImagenDerecha2>
         </div>
       </div>
     </>

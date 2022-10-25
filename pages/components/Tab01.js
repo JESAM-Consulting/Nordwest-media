@@ -68,7 +68,7 @@ const Tab01 = (props) => {
         </div>
 
         <div className="w-full ">
-          <ImagenDerecha2></ImagenDerecha2>
+          <ImagenDerecha2 updateContenido ={props.updateContenido}></ImagenDerecha2>
         </div>
       </div>
     </>
@@ -107,7 +107,7 @@ const AreaCentralIzquierda = (props) => {
     //xl:leading-[2.7rem] lg:leading-[1.7rem]  leading-[1.7rem] 
     
     <div className="lg:px-8 lg:py-3 xl:w-[38vw] lg:w-[45vw]  bg-[#EFEFEF] ">
-      <div className="pt-6 px-4 font-tahoma-bold text-[#4B4B4B] text-center lg:text-start 
+      <div className="pt-6 px-4 lg:px-0 font-tahoma-bold text-[#4B4B4B] text-center lg:text-start 
       font-[700]
           text-[20px] 
           leading-[30x]
