@@ -17,9 +17,10 @@ const Opcion2 = ({ number, opcionname, activar }) => {
           <span className={"font-roboto text-[0.8rem] "+(activar ? "text-[#FFFFFF]" : "text-[#4B4B4B]")}>{number}</span>
         </div>
       </span>
+      {/* text-[0.8rem] */}
       <span
         className={
-          "ml-1 text-[#4B4B4B] text-[0.8rem] font-tahoma-bold"         
+          "ml-1 text-[#4B4B4B] text-[12px]  font-tahoma-bold"         
         }>
         {opcionname}
       </span>

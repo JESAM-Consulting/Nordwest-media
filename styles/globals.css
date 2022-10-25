@@ -119,6 +119,12 @@ a {
   /* font-weight: 400; */
 }
 
+
+.font-roboto-bold {
+  font-family: Roboto-Regular;
+  font-weight: 600;
+}
+
 .font-freehand {
   font-family: Freehand;
   /* font-weight: 400; */

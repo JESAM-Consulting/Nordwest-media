@@ -14,7 +14,7 @@ const Tab01 = (props) => {
       <div className="
           lg:grid 
           lg:grid-cols-[66%_34%] 
-          lg:grid-rows-[10vh_50vh_19vh]  
+          lg:grid-rows-[15vh_46vh_19vh]  
           xl:grid-rows-[15vh_48vh_19vh]   
           lg:w-full 
           hidden    ">
@@ -97,17 +97,27 @@ const AreaSuperiorIzquierda = () => {
 
 const AreaCentralIzquierda = (props) => {
   return (
-    // lg:w-[70%] xl:w-[60%]
-    // p-6 w-[48vw]  xl:h-[34vh] h-[32vh]
-    <div className="lg:px-8 lg:py-3 xl:w-[38vw] lg:w-[45vw]  bg-[#EFEFEF] h-[39vh]">
-      <div className="pt-6 tahoma-font-bold text-[#4B4B4B] xl:text-[2.2rem] lg:text-[1.2rem]
-         text-[1.5rem] font-extrabold text-center lg:text-start xl:leading-[2.7rem] lg:leading-[1.7rem]  leading-[1.7rem] ">
+    
+
+    // pt-6 tahoma-font-bold text-[#4B4B4B] xl:text-[2.2rem] lg:text-[1.2rem]
+    //      text-[1.5rem] font-extrabold text-center lg:text-start 
+    //      xl:leading-[2.7rem] lg:leading-[1.7rem]  leading-[1.7rem]
+
+    //  xl:text-[2.2rem] lg:text-[1.2rem] text-[1.5rem] 
+    //xl:leading-[2.7rem] lg:leading-[1.7rem]  leading-[1.7rem] 
+    
+    <div className="lg:px-8 lg:py-3 xl:w-[38vw] lg:w-[45vw]  bg-[#EFEFEF] ">
+      <div className="pt-6 px-4 font-tahoma-bold text-[#4B4B4B] text-center lg:text-start 
+      font-[700]
+          text-[20px] 
+          leading-[30x]
+         ">
         In nur 3 Schritten <br /> zu Deinem neuen Job
       </div>
 
       {/* xl:mt-10 mt-5 lg:mt-5  */}
       <div className="mt-5  pb-1  text-center lg:text-start">
-        <button className="btn bg-[#E20613] rounded text-[1rem] text-[#ffffff] px-5 py-2 font-roboto ">
+        <button className="btn bg-[#E20613] rounded text-[12px] text-[#ffffff] px-5 py-2 font-roboto-bold ">
           Jetzt Bewerbung starten 
         </button>
       </div>

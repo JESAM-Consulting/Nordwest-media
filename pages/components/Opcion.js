@@ -22,7 +22,7 @@ const Opcion = ({ number, opcionname, selected }) => {
         </div>
       </span>
 
-      <span className={"ml-3 text-[#4B4B4B] text-[0.8rem] font-tahoma-bold hidden md:block"}>
+      <span className={"ml-3 text-[#4B4B4B] text-[16px]   font-tahoma-bold hidden md:block"}>
         {opcionname}
       </span>
 

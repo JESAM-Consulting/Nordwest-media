@@ -17,8 +17,8 @@ const Tab03 = () => {
       <div className="
       lg:grid 
       lg:grid-cols-[66%_34%] 
-      lg:grid-rows-[10vh_50vh_19vh]  
-      xl:grid-rows-[10vh_53vh_19vh]   
+      lg:grid-rows-[15vh_46vh_19vh]  
+          xl:grid-rows-[15vh_48vh_19vh]  
       lg:w-full 
       hidden    
       

@@ -16,8 +16,8 @@ const Tab02 = (props) => {
     <div className="
       lg:grid 
       lg:grid-cols-[66%_34%] 
-      lg:grid-rows-[10vh_50vh_19vh]  
-      xl:grid-rows-[15vh_48vh_19vh]   
+      lg:grid-rows-[15vh_48vh_19vh]  
+          xl:grid-rows-[15vh_48vh_19vh]   
       lg:w-full 
       hidden     ">
        {/* ---------------------- Area Superior izquierda ----------------------     */}
@@ -81,7 +81,7 @@ const Tab02 = (props) => {
 const AreaSuperiorIzquierda = () => {
   return (
     <>
-      <div  className="pt-4">
+      <div  className="xl:pt-4 ">
           <span className="underline underline-offset-4 font-tahoma-bold text-[17px]">
             Jetzt Teil von
           </span>
@@ -89,7 +89,7 @@ const AreaSuperiorIzquierda = () => {
             der nwm werden!
           </span>
         </div>
-        <div className="font-tahoma xl:text-[15px] text-[12px] lg:text-[11px] text-[#AFA9A9] w-[90%] xl:w-[60%] lg:w-[100%] pt-2">
+        <div className=" font-tahoma xl:text-[15px] text-[12px] lg:text-[11px] text-[#AFA9A9] w-[90%] xl:w-[60%] lg:w-[100%] pt-2">
           Wir bieten einen krisensicheren Job, in dem sich unsere
           Mitarbeiter*innen individuell entwickeln können. Mit flachen
           Hierarchien und Kommunikation auf Augenhöhe.
@@ -103,8 +103,11 @@ const AreaCentralIzquierda = (props) => {
   return (
     // p-6 w-[48vw]  xl:h-[34vh] h-[32vh]
     
-    <div className="lg:px-8 lg:py-3 xl:w-[38vw] lg:w-[45vw] bg-[#EFEFEF] ">
-      <div className="pt-6 tahoma-font-bold text-[#4B4B4B] lg:text-[1.1rem] text-[1.5rem] font-extrabold text-center lg:text-start lg:leading-[2.7rem] leading-[1.7rem] ">
+    <div className="lg:px-8 lg:py-1 xl:w-[38vw] lg:w-[45vw] bg-[#EFEFEF] ">
+      <div className="pt-6 px-4 font-tahoma-bold text-[#4B4B4B] text-center lg:text-start 
+          text-[20px]
+          font-[700] 
+          leading-[30x]">
       Was trifft am besten auf Dich zu?
       </div>
 
@@ -114,7 +117,7 @@ const AreaCentralIzquierda = (props) => {
           </div>
 		  
           <div>
-          <button className="mt-3 btn bg-[#E20613] rounded text-[1rem] text-[#ffffff] px-5 py-2 font-roboto">Telfonischer Kundenberater mit Erfahrung </button>
+          <button className="mt-3 btn bg-[#E20613] rounded text-[1rem] text-[#ffffff] px-3 py-2 font-roboto">Telfonischer Kundenberater mit Erfahrung </button>
           </div>
 
           <div>
