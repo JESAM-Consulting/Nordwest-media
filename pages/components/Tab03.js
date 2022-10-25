@@ -4,6 +4,7 @@ import Opcion2 from "./Opcion2";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Checkbox from '@mui/material/Checkbox';
+import FormControlLabel from '@mui/material/FormControlLabel';
 
 const ImagenDerecha1 = () => {
   return (
@@ -24,7 +25,16 @@ const ImagenDerecha2 = () => {
 
 const VentanaModal = (props) => {
 
-  const label = { inputProps: { 'aria-label': ' Hiermit akzeptiere ich die geltenden Datenschutzbestimmungen.' } };
+ 
+
+  const styles = {
+    ".MuiFormControlLabel-label": {
+      fontSize: "0.55rem",
+      fontFamily: "Inter-Light !important"
+      // color:"red"
+    }
+ };
+ 
 
   return (
     <>
@@ -89,7 +99,10 @@ const VentanaModal = (props) => {
               </div>
 
               <div>
-                <Checkbox {...label} size="small"  sx={{ '& .MuiSvgIcon-root': { fontSize: 14 } }} />
+                
+
+                <FormControlLabel sx = {styles} control={<Checkbox defaultChecked size="small" sx={{ '& .MuiSvgIcon-root': { fontSize: 11 } }}  />} label=" Hiermit akzeptiere ich die geltenden Datenschutzbestimmungen." />
+                {/* <Checkbox {...label} size="small"  sx={{ '& .MuiSvgIcon-root': { fontSize: 14 } }} /> */}
 
               </div>
 
