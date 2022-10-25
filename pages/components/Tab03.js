@@ -38,9 +38,11 @@ const Tab03 = () => {
         </div>
         {/*----------------------- Imagen de la derecha -----------------------------*/}
 
-        <div className=" flex justify-end  col-start-2 row-start-1 imagen">
-          <ImagenDerecha1></ImagenDerecha1>
-        </div>
+     
+
+        <div className=" flex justify-end  col-start-2 row-start-1  row-end-4    imagen  ">
+         <ImagenDerecha1></ImagenDerecha1>
+       </div>
       </div>
 
       {/* PAntalla movil xl --> ancho < 1280  */}

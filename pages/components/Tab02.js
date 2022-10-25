@@ -11,15 +11,18 @@ import AreaInferiorIzquierda from "./AreaInferiorIzquierda";
 const Tab02 = (props) => {
   return (
     <>
-    <div className="lg:grid lg:grid-cols-[66%_34%] lg:grid-rows-[6vh_60vh_18vh]  lg:w-full hidden    ">
+    {/* lg:grid lg:grid-cols-[66%_34%] lg:grid-rows-[6vh_55vh_18vh]  lg:w-full hidden  */}
+   
+    <div className="  lg:grid lg:grid-cols-[66%_34%] lg:grid-rows-[6vh_55vh_18vh]  
+          xl:grid-rows-[6vh_60vh_19vh]   lg:w-full hidden   ">
        {/* ---------------------- Area Superior izquierda ----------------------     */}
-       <div className="pl-10 pt-2  col-start-1 row-start-1 ">
+       <div className="pl-10 pt-2  col-start-1 row-start-1  ">
          <AreaSuperiorIzquierda></AreaSuperiorIzquierda>
        </div>
 
        {/* ---------------------- Area Central izquierda----------------------     */}
-
-       <div className="ml-24 bg-[#EFEFEF] w-[60%] xl:h-[44vh] h-[32vh] col-start-1 row-start-2 self-center pt-5 mt-10 pl-10">
+       {/* w-[60%] xl:h-[44vh] h-[32vh] */}
+       <div className="ml-16 mt-10  col-start-1 row-start-2 self-center   ">
         
          <AreaCentralIzquierda
            updateContenido={props.updateContenido}
@@ -27,7 +30,7 @@ const Tab02 = (props) => {
        </div>
 
        {/* ---------------------- Area Inferior izquierda ----------------------     */}
-       <div className=" col-start-1 row-start-3 contenido ">
+       <div className=" col-start-1 row-start-3 contenido   ">
        <AreaInferiorIzquierda 
            texto1 = "Warum fragen wir das?"
            texto2= "Wir schaffen Raum für die Persönlichkeit unserer Mitarbeiterinnen und Mitarbeiter. Für uns ist individueller Service und qualitative Beratung eine Herzenssache.">
@@ -35,7 +38,7 @@ const Tab02 = (props) => {
        </div>
        {/*----------------------- Imagen de la derecha -----------------------------*/}
 
-       <div className=" flex justify-end  col-start-2 row-start-1 imagen">
+       <div className=" flex justify-end  col-start-2 row-start-1  row-end-4    imagen  ">
          <ImagenDerecha1></ImagenDerecha1>
        </div>
      </div>
@@ -93,7 +96,7 @@ const AreaSuperiorIzquierda = () => {
 
 const AreaCentralIzquierda = (props) => {
   return (
-    <div className="">
+    <div className="bg-[#EFEFEF] p-6 w-[48vw]  xl:h-[34vh] h-[32vh] bg-[#EFEFEF] ">
       <div className="tahoma-font-bold text-[#4B4B4B] lg:text-[1.5rem] text-[1.5rem] font-extrabold text-center lg:text-start lg:leading-[2.7rem] leading-[1.7rem] ">
       Was trifft am besten auf Dich zu?
       </div>
