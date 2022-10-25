@@ -1,5 +1,7 @@
 import React from "react";
 import Opcion2 from "./Opcion2";
+import ImagenDerecha1 from "./ImagenDerecha1";
+import ImagenDerecha2 from "./ImagenDerecha2";
 
 const AreaSuperiorIzquierda = () => {
   return (
@@ -94,21 +96,8 @@ const AreaInferiorIzquierda = () => {
   );
 };
 
-const ImagenDerecha1 = () => {
-  return (
-    <>
-      <img src="/img/girl-large.png" alt="NordWest" className="  h-[89vh] " />
-    </>
-  );
-};
 
-const ImagenDerecha2 = () => {
-  return (
-    <>
-      <img src="/img/girl-low.png" alt="NordWest" className="  w-[100vw] " />
-    </>
-  );
-};
+
 
 const Tab01 = (props) => {
   return (

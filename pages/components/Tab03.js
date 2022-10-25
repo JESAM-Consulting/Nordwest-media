@@ -5,22 +5,24 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
+import ImagenDerecha1 from "./ImagenDerecha1";
+import ImagenDerecha2 from "./ImagenDerecha2";
 
-const ImagenDerecha1 = () => {
-  return (
-    <>
-      <img src="/img/girl-large.png" alt="NordWest" className="  h-[89vh] " />
-    </>
-  );
-};
+// const ImagenDerecha1 = () => {
+//   return (
+//     <>
+//       <img src="/img/girl-large.png" alt="NordWest" className="  h-[89vh] " />
+//     </>
+//   );
+// };
 
-const ImagenDerecha2 = () => {
-  return (
-    <>
-      <img src="/img/girl-low.png" alt="NordWest" className="  w-[100vw] " />
-    </>
-  );
-};
+// const ImagenDerecha2 = () => {
+//   return (
+//     <>
+//       <img src="/img/girl-low.png" alt="NordWest" className="  w-[100vw] " />
+//     </>
+//   );
+// };
 
 
 const VentanaModal = (props) => {
@@ -39,13 +41,13 @@ const VentanaModal = (props) => {
   return (
     <>
       <div className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-        <div className="relative w-auto my-6 mx-auto max-w-3xl w-[40vw]">
+        <div className="relative w-auto my-6 mx-auto max-w-3xl lg:w-[40vw] w-[100vw] mx-2">
           {/*content*/}
           <div className="border-0 pt-6 pb-10 rounded-sm shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
             {/*header*/}
             <div className="flex items-start justify-between p-1  ">
 
-              <img src="/img/nwm_logo_400px.png" />
+              <img src="/img/nwm_logo_400px.png" className="w-[40%] ml-7"/>
 
               <button className="p-1 ml-auto mr-6 border-0 text-black  float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                 onClick={() => props.setShowModal(false)}>
