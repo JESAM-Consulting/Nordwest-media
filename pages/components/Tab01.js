@@ -54,7 +54,7 @@ const Tab01 = (props) => {
           <AreaSuperiorIzquierda></AreaSuperiorIzquierda>
         </div>
 
-        <div className="mt-5 p-2 px-6 pt-8  bg-[#EFEFEF] w-[90%]  ">
+        <div className="mt-5  px-3   bg-[#EFEFEF] w-[90%]  ">
         <AreaCentralIzquierda
             updateContenido={props.updateContenido}
             updateOpenTab={props.updateOpenTab}></AreaCentralIzquierda>
@@ -86,7 +86,7 @@ const AreaSuperiorIzquierda = () => {
         </span>
         <span className="font-tahoma-bold text-[0.9rem]">der nwm werden!</span>
       </div>
-      <div className="font-tahoma text-[0.85rem] text-[0.65rem] text-[#AFA9A9] w-[90%] lg:w-[40%] pt-2">
+      <div className="font-tahoma text-[0.85rem] text-[0.65rem] text-[#AFA9A9] w-[90%] xl:w-[40%] lg:w-[80%] pt-2">
         Wir bieten einen krisensicheren Job, in dem sich unsere
         Mitarbeiter*innen individuell entwickeln können. Mit flachen Hierarchien
         und Kommunikation auf Augenhöhe.
@@ -98,13 +98,15 @@ const AreaSuperiorIzquierda = () => {
 const AreaCentralIzquierda = (props) => {
   return (
     // lg:w-[70%] xl:w-[60%]
-    <div className=" p-6 w-[48vw]  xl:h-[34vh] h-[32vh] bg-[#EFEFEF] ">
-      <div className="tahoma-font-bold text-[#4B4B4B] xl:text-[2.2rem] lg:text-[1.2rem]
+    // p-6 w-[48vw]  xl:h-[34vh] h-[32vh]
+    <div className="lg:px-8 lg:py-3 xl:w-[38vw] lg:w-[45vw]  bg-[#EFEFEF] ">
+      <div className="pt-6 tahoma-font-bold text-[#4B4B4B] xl:text-[2.2rem] lg:text-[1.2rem]
          text-[1.5rem] font-extrabold text-center lg:text-start xl:leading-[2.7rem] lg:leading-[1.7rem]  leading-[1.7rem] ">
         In nur 3 Schritten <br /> zu Deinem neuen Job
       </div>
 
-      <div className="xl:mt-10 mt-5 lg:mt-5 text-center lg:text-start">
+      {/* xl:mt-10 mt-5 lg:mt-5  */}
+      <div className="mt-5  pb-1  text-center lg:text-start">
         <button className="btn bg-[#E20613] rounded text-[1rem] text-[#ffffff] px-5 py-2 font-roboto ">
           Jetzt Bewerbung starten 
         </button>
@@ -112,7 +114,7 @@ const AreaCentralIzquierda = (props) => {
       {/* TODO: centrar correctamente */}
 
       {/* lg:justify-start */}
-      <div className="lg:flex lg:flex-row mt-3  lg:w-[100%]  w-[40%]  flex flex-col ml-[28vw] lg:ml-[0vw]   ">
+      <div className="pb-6 lg:flex lg:flex-row mt-3  lg:w-[100%]  w-[40%]  flex flex-col ml-[28vw] lg:ml-[0vw]   ">
         <a
           className= "text-xs font-bold    cursor-pointer"
           onClick={(e) => {
