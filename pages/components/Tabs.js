@@ -54,7 +54,7 @@ const Tabs = () => {
       {/* <div className="flex flex-wrap"> */}
         {/* <div className="w-full "> */}
           <div className="grid menu grid-cols-[40%_18%_18%_18%] xl:grid-cols-[15%_21%_21%_21%] bg-[#ffffff] ">
-            <div className=" flex justify-center items-center w-full md:w-[80%]">
+            <div className=" flex justify-center items-center w-full md:w-[80%] p-4">
               <img src="/img/nwm_logo_400px.png" alt="NordWest" />
             </div>
             <div className=" flex justify-center items-center ">
