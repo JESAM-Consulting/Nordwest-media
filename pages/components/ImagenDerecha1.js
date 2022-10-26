@@ -6,7 +6,7 @@ const ImagenDerecha1 = () => {
         // h-[86vh]
       <>
       
-        <img src="/img/girl-large.png" alt="NordWest" className=" object-contain  " />
+        <Image src="/img/girl-large.png" alt="NordWest" className=" object-contain  " />
       </>
     );
   };

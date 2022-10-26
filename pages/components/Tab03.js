@@ -116,13 +116,13 @@ const VentanaModal = (props) => {
           <div className="border-0 pt-6 pb-10 rounded-sm shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
             {/*header*/}
             <div className="flex items-start justify-between p-1  ">
-              <img src="/img/nwm_logo_400px.png" className="w-[40%] ml-7" />
+              <Image src="/img/nwm_logo_400px.png" className="w-[40%] ml-7" />
 
               <button
                 className="p-1 ml-auto mr-6 border-0 text-black  float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                 onClick={() => props.setShowModal(false)}>
                 <span className=" opacity-1 h-8 w-8 text-2xl block outline-none focus:outline-none">
-                  <img src="/img/ei_close.svg" />
+                  <Image src="/img/ei_close.svg" />
                 </span>
               </button>
             </div>

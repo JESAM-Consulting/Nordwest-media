@@ -21,7 +21,7 @@ const Tabs = () => {
 
 
             <div className=" flex justify-center items-center w-[90%] lg:w-[70%] p-1 ml-4">
-              <img src="/img/nwm_logo_400px.png" alt="NordWest" />
+              <Image src="/img/nwm_logo_400px.png" alt="NordWest" />
             </div>
             <div className=" flex justify-center items-center ">
               <a
@@ -159,10 +159,10 @@ const Footer = () => {
 
       <div className="col-start-4 flex flex-row items-center">
         <a className="w-[4%]" href="https://www.facebook.com">
-          <img src="/img/brandico_facebook.svg" alt="NordWest" />
+          <Image src="/img/brandico_facebook.svg" alt="NordWest" />
         </a>
         <a className="ml-5 w-[11%]" href="https://www.instagram.com">
-          <img src="/img/bxl_instagram-alt.svg" alt="NordWest" />
+          <Image src="/img/bxl_instagram-alt.svg" alt="NordWest" />
         </a>
       </div>
     </div>
