@@ -1,5 +1,6 @@
 {
   "extends": "next/core-web-vitals",
+  "ignorePatterns": ["/pages/components/Globales/*"],
   "rules": {
     // Other rules
     "@next/next/no-img-element": "off"
