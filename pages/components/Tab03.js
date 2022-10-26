@@ -101,7 +101,9 @@ const VentanaModal = (props) => {
   console.log("Tipo de persona "+props.vTipoPersona)
 
 
+  //Estilos para el checkbox
   const styles = {
+   
     ".MuiFormControlLabel-label": {
       fontSize: "0.55rem",
       fontFamily: "Inter-Light !important",
@@ -111,7 +113,7 @@ const VentanaModal = (props) => {
 
   return (
     <>
-      <div className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+      <div className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 posision-z outline-none focus:outline-none">
         <div className="relative w-auto my-6 mx-auto max-w-3xl lg:w-[40vw] w-[100vw] mx-2">
           {/*content*/}
           <div className="border-0 pt-6 pb-10 rounded-sm shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
@@ -138,44 +140,44 @@ const VentanaModal = (props) => {
               <div className=" font-inter-light mt-2 text-[0.9rem]">
                 So können wir Dich erreichen
               </div>
-              <div className="mb-1">
+              <div className="mb-2 mt-2">
                 <TextField
-                  className=" w-full h-[5vh]"
+                  className=" w-full h-[6vh]"
                   id="standard-basic"
                   label="Vorname"
                   variant="standard"
                 />
               </div>
-              <div className="mb-1">
+              <div className="mb-2">
                 <TextField
-                  className=" w-full h-[5vh]"
+                  className=" w-full h-[6vh]"
                   id="nachname"
                   label="Nachname"
                   variant="standard"
                 />
               </div>
 
-              <div className="mb-1">
+              <div className="mb-2">
                 <TextField
-                  className=" w-full h-[5vh]"
+                  className=" w-full h-[6vh]"
                   id="Postleitzahl"
                   label="Postleitzahl"
                   variant="standard"
                 />
               </div>
 
-              <div className="mb-1">
+              <div className="mb-2">
                 <TextField
-                  className=" w-full h-[5vh]"
+                  className=" w-full h-[6vh]"
                   id="Email"
                   label="Email"
                   variant="standard"
                 />
               </div>
 
-              <div className="mb-1">
+              <div className="mb-2">
                 <TextField
-                  className=" w-full h-[5vh]"
+                  className=" w-full h-[6vh]"
                   id="Telefon"
                   label="Telefon"
                   variant="standard"

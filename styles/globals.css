@@ -155,7 +155,7 @@ font-family: "Montserrat-Bold";
 
 .footer{
   position: fixed;
-  z-index: 1000000;
+  z-index: 100;
   overflow: hidden;
   bottom: 0px;
   left: 0px;
@@ -165,12 +165,17 @@ font-family: "Montserrat-Bold";
 
 .text-over-image2{
   position: absolute;
-  z-index: 1000000;
+  z-index: 1000;
   overflow: hidden;
   bottom: 19vh;
   left: 8vw;
 }
 
+
+.posision-z {
+  z-index: 5000!important;
+
+}
 
 .imagen {
   z-index: -5;
@@ -230,9 +235,27 @@ li {
   color: green;
 } */
 
+/*  label antes de escribir*/
 .MuiFormLabel-root {
   /* color: #E40067!important; */
   font-family:  Inter-Light !important;
-  font-size: 0.9rem!important; 
+   font-size: 0.8rem !important;  
 }
+
+/*  label luego de escribir*/
+.MuiFormLabel-root.Mui-focused {
+  /* color:#d7e118 !important; */
+  font-family:  Inter-Light !important;
+   font-size: 0.7rem!important;  
+
+  
+}
+
+/*  Texto del ususaio*/
+.MuiInput-root {
+  /* color: #09ff15!important; */
+    font-size: 0.8rem!important;  
+    
+}
+
 

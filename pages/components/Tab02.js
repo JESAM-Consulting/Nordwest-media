@@ -110,7 +110,7 @@ const AreaCentralIzquierda = (props) => {
           text-[19px]
           font-[700] 
           leading-[30x]">
-        Was trifft am besten auf Dich zu?
+        Was trifft am besten <br className="lg:hidden"/>auf Dich zu?
       </div>
 
       <div className="mt-5  pb-6  text-center lg:text-start">

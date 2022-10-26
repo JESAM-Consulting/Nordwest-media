@@ -8,6 +8,8 @@ import Tab03 from "./Tab03";
 import Tab04 from "./Tab04";
 import Tab05 from "./Tab05";
 
+import Link from 'next/link';
+
 
 const Tabs = () => {
   const [openTab, setOpenTab] = React.useState(1);
@@ -22,7 +24,19 @@ const Tabs = () => {
 
 
             <div className=" flex justify-center items-center w-[90%] lg:w-[70%] p-1 ml-4">
-              <img src="/img/nwm_logo_400px.png" alt="NordWest"  />
+          
+             
+            
+            
+              <img src="/img/nwm_logo_400px.png" alt="NordWest" 
+              onClick={(e) => {
+                e.preventDefault();
+                setOpenTab(1); //setear tab abierto
+                setContenido(1);
+              }}
+              
+              />
+           
             </div>
             <div className=" flex justify-center items-center ">
               <a
