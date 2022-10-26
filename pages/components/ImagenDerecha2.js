@@ -4,7 +4,7 @@ import Image from 'next/image';
 const ImagenDerecha2 = (props) => {
   return (
     <div className="relative">
-      <Image src="/img/girl-low.png" alt="NordWest" className="  w-[100vw] " />
+      <img src="/img/girl-low.png" alt="NordWest" className="  w-[100vw] " />
       {/* <div class="absolute bottom-0 border border-black   "> */}
       <div className="text-[#000000] text-[17px] font-tahoma-bold text-over-image2 left-8">
         <div>
@@ -33,13 +33,13 @@ const ImagenDerecha2 = (props) => {
         <div className="flex flex-row pt-3">
           
           <a className="" href="https://www.facebook.com">
-            <Image src="/img/facebook-dark.svg" alt="NordWest" />
+            <img src="/img/facebook-dark.svg" alt="NordWest" />
             </a>
           
 
           
           <a className="ml-5 " href="https://www.instagram.com">
-            <Image src="/img/instagram-dark.svg" alt="NordWest" />
+            <img src="/img/instagram-dark.svg" alt="NordWest"  />
             </a>
 
           

@@ -5,15 +5,18 @@ const tipoPersona = atom({
   default: ''
 });
 
-// const charState = selector(
-//     {
-//         key: 'charState',
-//         get: ({get}=>{
-//             const name = get(tipoPersona);
-//             return name.length;
-//         });
-//     }
-// )
+const charState = selector({
+        key: 'charState',
+        get: ({get}) => {
+            const name = get(tipoPersona);
+            return name.length;
+        },
+    });
 
-// export {tipoPersona, charState}
- export {tipoPersona}
+export {tipoPersona, charState}
+//  export {tipoPersona}
+
+//  const  Context = ()=>{
+//   ...
+// }
+// export default Context
