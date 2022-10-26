@@ -117,7 +117,13 @@ const AreaCentralIzquierda = (props) => {
 
       {/* xl:mt-10 mt-5 lg:mt-5  */}
       <div className="mt-5  pb-1  text-center lg:text-start">
-        <button className="btn bg-[#E20613] rounded text-[12px] text-[#ffffff] px-5 py-2 font-roboto-bold ">
+        <button className="btn bg-[#E20613] rounded text-[12px] text-[#ffffff] px-5 py-2 font-roboto-bold "
+          onClick={(e) => {
+            e.preventDefault();
+            props.updateContenido(2);
+            props.updateOpenTab(2);
+          }}
+        >
           Jetzt Bewerbung starten 
         </button>
       </div>

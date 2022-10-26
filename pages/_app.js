@@ -14,6 +14,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider } from '@emotion/react';
 import theme from '../src/theme';
 import createEmotionCache from '../src/createEmotionCache';
+import { RecoilRoot } from "recoil";
 
 // Client-side cache shared for the whole session
 // of the user in the browser.
@@ -37,7 +38,9 @@ export default function MyApp(props) {
 				build upon. */}
 				
 				<CssBaseline />
-				<Component {...pageProps} />
+				<RecoilRoot>
+				   <Component {...pageProps} />
+				</RecoilRoot>
 			</ThemeProvider>
 		</CacheProvider>
 	);

@@ -8,9 +8,19 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import ImagenDerecha1 from "./ImagenDerecha1";
 import ImagenDerecha2 from "./ImagenDerecha2";
 import AreaInferiorIzquierda from "./AreaInferiorIzquierda";
+import {useRecoilState} from 'recoil';
+import {tipoPersona} from './Globales/globales';
+import { useState, useEffect } from "react";
+
 
 
 const Tab03 = (props) => {
+  const [vTipoPersona, setTipoPersona] = useRecoilState(tipoPersona);
+
+//   useEffect(() => {
+//     console.log("Tipo persona "+vTipoPersona);
+// }, []);
+
   return (
     <>
     {/*  lg:grid lg:grid-cols-[66%_34%] lg:grid-rows-[6vh_60vh_18vh]  lg:w-full hidden */}
@@ -25,7 +35,7 @@ const Tab03 = (props) => {
          ">
         {/* ---------------------- Area Superior izquierda ----------------------     */}
         <div className="pl-10 pt-2  col-start-1 row-start-1 ">
-          <AreaSuperiorIzquierda></AreaSuperiorIzquierda>
+          <AreaSuperiorIzquierda vTipoPersona={vTipoPersona}></AreaSuperiorIzquierda>
         </div>
 
         {/* ---------------------- Area Central izquierda----------------------     */}
@@ -57,7 +67,7 @@ const Tab03 = (props) => {
       {/* PAntalla movil xl --> ancho < 1280  */}
       <div className="w-full lg:hidden  flex flex-col items-center">
         <div className="pt-2 px-6">
-          <AreaSuperiorIzquierda></AreaSuperiorIzquierda>
+          <AreaSuperiorIzquierda vTipoPersona={vTipoPersona}></AreaSuperiorIzquierda>
         </div>
 
         {/* <div className="mt-5 p-2 px-6 pt-8 bg-[#EFEFEF] w-[90%]  ">
@@ -85,6 +95,11 @@ const Tab03 = (props) => {
 
 
 const VentanaModal = (props) => {
+
+
+  console.log("Tipo de persona "+props.vTipoPersona)
+
+
   const styles = {
     ".MuiFormControlLabel-label": {
       fontSize: "0.55rem",
@@ -198,13 +213,15 @@ const VentanaModal = (props) => {
   );
 };
 
-const AreaSuperiorIzquierda = () => {
+const AreaSuperiorIzquierda = (props) => {
   const [showModal, setShowModal] = React.useState(false);
+
+  
 
   return (
     <>
       {showModal ? (
-        <VentanaModal setShowModal={setShowModal}></VentanaModal>
+        <VentanaModal setShowModal={setShowModal}  vTipoPersona={props.vTipoPersona}></VentanaModal>
       ) : null}
 
       <div className="pt-4">
@@ -232,6 +249,8 @@ const AreaSuperiorIzquierda = () => {
           </div>
         </button>
       </div>
+
+      <div className="lg:overflow-y-auto lg:h-[40vh] lg:mt-1">
       <div className="font-tahoma-bold text-[#4B4B4B] lg:text-[30px] text-[16px] mt-8    leading-[2.7rem]">
         <span className="underline underline-offset-8 ">Das bieten wi</span>
         <span className=" ">r Dir!</span>
@@ -300,6 +319,7 @@ const AreaSuperiorIzquierda = () => {
             Rückrufe und Termine mit dem/der jeweiligen Berater*in
           </li>
         </ul>
+      </div>
       </div>
     </>
   );
