@@ -33,13 +33,13 @@ const ImagenDerecha2 = (props) => {
         <div className="flex flex-row pt-3">
           
           <a className="" href="https://www.facebook.com">
-            <Image src="/img/facebook-dark.svg"/>
+            <Image src="/img/facebook-dark.svg" alt="NordWest" />
             </a>
           
 
           
           <a className="ml-5 " href="https://www.instagram.com">
-            <Image src="/img/instagram-dark.svg"/>
+            <Image src="/img/instagram-dark.svg" alt="NordWest" />
             </a>
 
           
