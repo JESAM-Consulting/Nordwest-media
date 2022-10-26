@@ -9,7 +9,7 @@ import ImagenDerecha1 from "./ImagenDerecha1";
 import ImagenDerecha2 from "./ImagenDerecha2";
 import AreaInferiorIzquierda from "./AreaInferiorIzquierda";
 import {useRecoilState} from 'recoil';
-import {tipoPersona} from './Globales/globales';
+import { tipoPersona } from "../../src/globales";
 import { useState, useEffect } from "react";
 import Image from 'next/image';
 
