@@ -11,6 +11,7 @@ import AreaInferiorIzquierda from "./AreaInferiorIzquierda";
 import {useRecoilState} from 'recoil';
 import {tipoPersona} from './Globales/globales';
 import { useState, useEffect } from "react";
+import Image from 'next/image'
 
 
 

@@ -7,6 +7,7 @@ import Tab02 from "./Tab02";
 import Tab03 from "./Tab03";
 import Tab04 from "./Tab04";
 import Tab05 from "./Tab05";
+import Image from 'next/image'
 
 const Tabs = () => {
   const [openTab, setOpenTab] = React.useState(1);
