@@ -2,7 +2,7 @@ const { atom, selector } = require("recoil");
 
 const tipoPersona = atom({
   key: "tipoPersona",
-  default: ''
+  default: 1
 });
 
 const charState = selector({

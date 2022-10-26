@@ -11,7 +11,8 @@ const Tab02 = (props) => {
   const [vTipoPersona, setTipoPersona] = useRecoilState(tipoPersona);
 
   useEffect(() => {
-    setTipoPersona(1);
+    const valorInicial = 1;
+    //setTipoPersona(valorInicial);
   }, []);
 
   return (
