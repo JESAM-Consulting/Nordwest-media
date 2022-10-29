@@ -9,7 +9,7 @@ const backend_url = dev ? "http://localhost:1337" :  "https://nordwest-media.her
 const from_emailaddress =  dev ? "renedsoft@gmail.com": "renedsoft@gmail.com";
 
 //direccion a donde se envia el correo
-const to_emailaddress = dev ? "renedp1975@gmail.com": "renedp1975@gmail.com";
+const to_emailaddress = dev ? "renedp1975@gmail.com": "sam@jesamconsulting.com";
 
 // sam@jesamconsulting.com
 
