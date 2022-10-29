@@ -154,13 +154,13 @@ const VentanaModal = (props) => {
 
     if (cod_resp==="ok") {
       Swal.fire({icon: 'success',text: 'Email wurde erfolgreich Versendet',
-      confirmButtonText: 'close'});
+      confirmButtonText: 'Schließen'});
     } else {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
         text: 'Fehler beim Senden der E-Mail',
-        confirmButtonText: 'close',
+        confirmButtonText: 'Schließen',
         // footer: '<a href="">Why do I have this issue?</a>'
       })
 
