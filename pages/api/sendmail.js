@@ -66,7 +66,7 @@ export default async function handler(req, res) {
        `,
   });
 
-  console.log(bodyData);
+  // console.log(bodyData);
 
   // let bodyData =JSON.stringify({
   //         "to":"renedp1975@gmail.com",
@@ -84,9 +84,9 @@ export default async function handler(req, res) {
         "Content-Type": "application/json",
       },
     });
-    return res.status(200).json({ ok: "email send ok" });
+    return res.status(200).json({ cod_resp: "ok", detalle: "Email sent OK" });
   } catch (err) {
-    console.log("Error in sendFormulario: " + err);
-    return res.status(500).json({ name: "ERROR" });
+    // console.log("Error in sendFormulario: " + err);
+    return res.status(500).json({ cod_resp: "Error", detalle: err });
   }
 }

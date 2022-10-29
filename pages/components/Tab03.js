@@ -15,6 +15,8 @@ import Image from 'next/image';
 
 import {servidor_url} from '../../config/config'
 
+import Swal from 'sweetalert2';
+
 
 const Tab03 = (props) => {
   const [vTipoPersona, setTipoPersona] = useRecoilState(tipoPersona);
@@ -118,7 +120,7 @@ const VentanaModal = (props) => {
   const sendFormulario = async () =>  {
    
 
- 
+    
 
     const vorname = document.querySelector('#vorname').value;
     const nachname = document.querySelector('#nachname').value;
@@ -130,7 +132,7 @@ const VentanaModal = (props) => {
    
 
     // const peticion  = await fetch(`${servidor_url}/api/sendmail`, {
-       const peticion  = await fetch(`${servidor_url}/api/sendmail`, {
+    const peticion  = await fetch(`${servidor_url}/api/sendmail`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -146,7 +148,25 @@ const VentanaModal = (props) => {
 
 
     const respuesta = await peticion.json()
-    console.log(respuesta.name)
+    const cod_resp = respuesta.cod_resp;
+    const detalles = respuesta.detalle;
+    // console.log("respues"+respuesta.cod_resp)
+
+    if (cod_resp==="ok") {
+      Swal.fire({icon: 'success',text: 'Email wurde erfolgreich Versendet',
+      confirmButtonText: 'close'});
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Fehler beim Senden der E-Mail',
+        confirmButtonText: 'close',
+        // footer: '<a href="">Why do I have this issue?</a>'
+      })
+
+      
+      //Swal.fire('Error sending email');
+    }
    
 
   }
