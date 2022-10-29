@@ -5,8 +5,12 @@ const backend_url = dev ? "http://localhost:1337" :  "https://nordwest-media.her
 
 
 
-const from_emailaddress = "renedp1975@gmail.com";
-const to_emailaddress = "sam@jesamconsulting.com";
+const from_emailaddress =  dev ? "renedsoft@gmail.com": "renedsoft@gmail.com";
+const to_emailaddress = dev ? "renedp1975@gmail.com": "renedp1975@gmail.com";
+
+// sam@jesamconsulting.com
+
+
 
 const servidor_url = dev
   ? "http://localhost:3000"
