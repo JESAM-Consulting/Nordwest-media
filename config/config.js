@@ -6,7 +6,7 @@ const  backend_url = "https://nordwest-media.herokuapp.com";
 
 
 const from_emailaddress = "renedp1975@gmail.com";
-const to_emailaddress = "renedp1975@gmail.com";
+const to_emailaddress = "sam@jesamconsulting.com";
 
 const servidor_url = dev
   ? "http://localhost:3000"
