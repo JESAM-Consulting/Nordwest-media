@@ -10,7 +10,7 @@ const to_emailaddress = "renedp1975@gmail.com";
 
 const servidor_url = dev
   ? "http://localhost:3000"
-  : "https://misitioweb.com";
+  : "https://nordwest.vercel.app";
 
 
 export {servidor_url , backend_url , from_emailaddress,to_emailaddress }  
