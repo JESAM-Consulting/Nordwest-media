@@ -1,7 +1,7 @@
 const dev = process.env.NODE_ENV !== "production";
 
-//  const backend_url = "http://localhost:1337";
-const  backend_url = "https://nordwest-media.herokuapp.com";
+
+const backend_url = dev ? "http://localhost:1337" :  "https://nordwest-media.herokuapp.com";
 
 
 
