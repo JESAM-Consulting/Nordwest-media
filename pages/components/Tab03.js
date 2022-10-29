@@ -13,6 +13,7 @@ import { tipoPersona } from "../../src/globales";
 import { useState, useEffect } from "react";
 import Image from 'next/image';
 
+import {servidor_url} from '../../config/config'
 
 
 const Tab03 = (props) => {
@@ -98,8 +99,7 @@ const Tab03 = (props) => {
 const VentanaModal = (props) => {
 
 
-  console.log("Tipo de persona "+props.vTipoPersona)
-
+ 
 
   //Estilos para el checkbox
   const styles = {
@@ -110,6 +110,46 @@ const VentanaModal = (props) => {
       // color:"red"
     },
   };
+
+
+  
+
+
+  const sendFormulario = async () =>  {
+   
+
+ 
+
+    const vorname = document.querySelector('#vorname').value;
+    const nachname = document.querySelector('#nachname').value;
+    const postleitzahl = document.querySelector('#postleitzahl').value;
+    const email = document.querySelector('#email').value;
+    const telefon = document.querySelector('#telefon').value;
+    const tipopersona = props.vTipoPersona;
+
+   
+
+    // const peticion  = await fetch(`${servidor_url}/api/sendmail`, {
+       const peticion  = await fetch(`${servidor_url}/api/sendmail`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+         vorname: vorname,
+         nachname: nachname,
+         postleitzahl: postleitzahl,
+         email: email,
+         telefon: telefon,
+         tipopersona: tipopersona        
+        })
+    });
+
+
+
+    const respuesta = await peticion.json()
+    console.log(respuesta.name)
+   
+
+  }
 
   return (
     <>
@@ -143,7 +183,8 @@ const VentanaModal = (props) => {
               <div className="mb-2 mt-2">
                 <TextField
                   className=" w-full h-[6vh]"
-                  id="standard-basic"
+                  id="vorname"
+                  name="vorname"
                   label="Vorname"
                   variant="standard"
                 />
@@ -152,6 +193,7 @@ const VentanaModal = (props) => {
                 <TextField
                   className=" w-full h-[6vh]"
                   id="nachname"
+                  name="nachname"
                   label="Nachname"
                   variant="standard"
                 />
@@ -160,7 +202,8 @@ const VentanaModal = (props) => {
               <div className="mb-2">
                 <TextField
                   className=" w-full h-[6vh]"
-                  id="Postleitzahl"
+                  id="postleitzahl"
+                  name="postleitzahl"
                   label="Postleitzahl"
                   variant="standard"
                 />
@@ -169,7 +212,8 @@ const VentanaModal = (props) => {
               <div className="mb-2">
                 <TextField
                   className=" w-full h-[6vh]"
-                  id="Email"
+                  id="email"
+                  name="email"
                   label="Email"
                   variant="standard"
                 />
@@ -178,7 +222,8 @@ const VentanaModal = (props) => {
               <div className="mb-2">
                 <TextField
                   className=" w-full h-[6vh]"
-                  id="Telefon"
+                  id="telefon"
+                  name="Telefon"
                   label="Telefon"
                   variant="standard"
                 />
@@ -188,7 +233,13 @@ const VentanaModal = (props) => {
                 <button
                   className="btn bg-[#E20613] rounded text-[1rem] text-[#ffffff] px-7 py-1 font-roboto ease-linear transition-all duration-150"
                   type="button"
-                  onClick={() => props.setShowModal(false)}>
+                  onClick={() => {
+                   
+
+                    sendFormulario();
+                    props.setShowModal(false);
+                  }
+                  }>
                   Absenden
                 </button>
               </div>

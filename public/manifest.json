@@ -1,0 +1,7 @@
+
+{
+    "name": "NordWest",
+    "display": "standalone",
+    // "start_url": "/?standalone=true"
+    "orientation": "landscape"
+  }
