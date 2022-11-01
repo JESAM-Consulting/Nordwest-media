@@ -6,7 +6,7 @@ const AreaInferiorIzquierda = ({texto1, texto2}) => {
     return (
       <div
         className="bg-[#EFEFEF]  grid  grid-cols-[9%_80%]  lg:w-[78vw] w-[100vw]
-      lg:grid-rows-[3vh_14vh] grid-rows-[3vh_10vh]  pl-3 lg:pt-3 leading-[0.95rem]">
+      lg:grid-rows-[3vh_14vh] grid-rows-[3vh_16vh]  pl-3 lg:pt-3 leading-[0.95rem]">
         <img
           src="/img/entypo_help-with-circle.svg"
           alt="NordWest"
